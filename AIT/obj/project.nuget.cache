@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Zz8ZVAf80KjTx3LkKGyMNB8ex+T8L7p4OsicvxaaUVZn5iFf+O/S3Js92/lhvDZSzTU+/rOahVbRHz05/GDq5w==",
+  "success": true,
+  "projectFilePath": "C:\\C#_Selenium_Automation_Portfolio\\AIT\\AIT.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
