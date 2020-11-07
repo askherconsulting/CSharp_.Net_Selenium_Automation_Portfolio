@@ -1,9 +1,0 @@
-C:\c#_selenium4_framework_portfolio\Royale\bin\Debug\netstandard2.0\Royale.deps.json
-C:\c#_selenium4_framework_portfolio\Royale\bin\Debug\netstandard2.0\Royale.dll
-C:\c#_selenium4_framework_portfolio\Royale\bin\Debug\netstandard2.0\Royale.pdb
-C:\c#_selenium4_framework_portfolio\Royale\obj\Debug\netstandard2.0\Royale.csprojAssemblyReference.cache
-C:\c#_selenium4_framework_portfolio\Royale\obj\Debug\netstandard2.0\Royale.AssemblyInfoInputs.cache
-C:\c#_selenium4_framework_portfolio\Royale\obj\Debug\netstandard2.0\Royale.AssemblyInfo.cs
-C:\c#_selenium4_framework_portfolio\Royale\obj\Debug\netstandard2.0\Royale.csproj.CoreCompileInputs.cache
-C:\c#_selenium4_framework_portfolio\Royale\obj\Debug\netstandard2.0\Royale.dll
-C:\c#_selenium4_framework_portfolio\Royale\obj\Debug\netstandard2.0\Royale.pdb

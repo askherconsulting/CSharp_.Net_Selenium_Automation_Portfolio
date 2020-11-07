@@ -58,6 +58,20 @@
         "runtime": {
           "lib/netstandard2.0/WebDriver.dll": {}
         }
+      },
+      "Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Selenium.Support": "4.0.0-alpha05",
+          "Selenium.WebDriver": "4.0.0-alpha05"
+        },
+        "compile": {
+          "bin/placeholder/Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Framework.dll": {}
+        }
       }
     }
   },
@@ -268,13 +282,17 @@
         "selenium.webdriver.4.0.0-alpha05.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
+    },
+    "Framework/1.0.0": {
+      "type": "project",
+      "path": "../Framework/Framework.csproj",
+      "msbuildProject": "../Framework/Framework.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3",
-      "Selenium.Support >= 4.0.0-alpha05",
-      "Selenium.WebDriver >= 4.0.0-alpha05"
+      "Framework >= 1.0.0",
+      "NETStandard.Library >= 2.0.3"
     ]
   },
   "packageFolders": {
@@ -283,11 +301,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
-      "projectName": "Framework",
-      "projectPath": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
+      "projectUniqueName": "C:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj",
+      "projectName": "Royale",
+      "projectPath": "C:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj",
       "packagesPath": "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\",
-      "outputPath": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\obj\\",
+      "outputPath": "C:\\C#_Selenium_Automation_Portfolio\\Royale\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\elizabeth.marshall\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -302,7 +320,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj": {
+              "projectPath": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -319,14 +341,6 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
-          },
-          "Selenium.Support": {
-            "target": "Package",
-            "version": "[4.0.0-alpha05, )"
-          },
-          "Selenium.WebDriver": {
-            "target": "Package",
-            "version": "[4.0.0-alpha05, )"
           }
         },
         "imports": [
