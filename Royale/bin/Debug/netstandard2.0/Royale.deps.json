@@ -7,14 +7,13 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "Framework/1.0.0": {
+      "Royale/1.0.0": {
         "dependencies": {
-          "NETStandard.Library": "2.0.3",
-          "Selenium.Support": "4.0.0-alpha05",
-          "Selenium.WebDriver": "4.0.0-alpha05"
+          "Framework": "1.0.0",
+          "NETStandard.Library": "2.0.3"
         },
         "runtime": {
-          "Framework.dll": {}
+          "Royale.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -52,11 +51,20 @@
             "fileVersion": "4.0.0.0"
           }
         }
+      },
+      "Framework/1.0.0": {
+        "dependencies": {
+          "Selenium.Support": "4.0.0-alpha05",
+          "Selenium.WebDriver": "4.0.0-alpha05"
+        },
+        "runtime": {
+          "Framework.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "Framework/1.0.0": {
+    "Royale/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -95,6 +103,11 @@
       "sha512": "sha512-ZaaY0T5eTDjxcJSZbgZuVUbc4eCSoY8cCjLHwAjHoeBBZQIq3SrlCTkaFNZ46288niZUlS9a5ehLAF7rpa86zQ==",
       "path": "selenium.webdriver/4.0.0-alpha05",
       "hashPath": "selenium.webdriver.4.0.0-alpha05.nupkg.sha512"
+    },
+    "Framework/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

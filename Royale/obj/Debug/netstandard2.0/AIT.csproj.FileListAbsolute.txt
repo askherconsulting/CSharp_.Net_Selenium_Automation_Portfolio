@@ -1,0 +1,12 @@
+C:\C#_Selenium_Automation_Portfolio\AIT\bin\Debug\netstandard2.0\AIT.deps.json
+C:\C#_Selenium_Automation_Portfolio\AIT\bin\Debug\netstandard2.0\AIT.dll
+C:\C#_Selenium_Automation_Portfolio\AIT\bin\Debug\netstandard2.0\AIT.pdb
+C:\C#_Selenium_Automation_Portfolio\AIT\bin\Debug\netstandard2.0\Framework.dll
+C:\C#_Selenium_Automation_Portfolio\AIT\bin\Debug\netstandard2.0\Framework.pdb
+C:\C#_Selenium_Automation_Portfolio\AIT\obj\Debug\netstandard2.0\AIT.csprojAssemblyReference.cache
+C:\C#_Selenium_Automation_Portfolio\AIT\obj\Debug\netstandard2.0\AIT.AssemblyInfoInputs.cache
+C:\C#_Selenium_Automation_Portfolio\AIT\obj\Debug\netstandard2.0\AIT.AssemblyInfo.cs
+C:\C#_Selenium_Automation_Portfolio\AIT\obj\Debug\netstandard2.0\AIT.csproj.CoreCompileInputs.cache
+C:\C#_Selenium_Automation_Portfolio\AIT\obj\Debug\netstandard2.0\AIT.csproj.CopyComplete
+C:\C#_Selenium_Automation_Portfolio\AIT\obj\Debug\netstandard2.0\AIT.dll
+C:\C#_Selenium_Automation_Portfolio\AIT\obj\Debug\netstandard2.0\AIT.pdb

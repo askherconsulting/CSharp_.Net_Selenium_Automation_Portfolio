@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JtwhLtJ7FgMMLTs2ATogxCX4m7tEw9IdyCOo9Et3ZIb2FFnQVZAM1M74A2lmENb+d95OrLscePNkVl4vhvUB9A==",
+  "dgSpecHash": "IcLTjEWveoHTmIs9UdKNd/dPwrLtgrVyY8oyzFMF6Ygm/eNVTbHhU438GUAwRvaYTPLfQ5qA0DXiYohY7DvWbw==",
   "success": true,
-  "projectFilePath": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
+  "projectFilePath": "C:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
