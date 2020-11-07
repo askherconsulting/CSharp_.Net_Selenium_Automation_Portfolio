@@ -3975,11 +3975,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\Royale.Tests.csproj",
+      "projectUniqueName": "c:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\Royale.Tests.csproj",
       "projectName": "Royale.Tests",
-      "projectPath": "C:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\Royale.Tests.csproj",
+      "projectPath": "c:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\Royale.Tests.csproj",
       "packagesPath": "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\",
-      "outputPath": "C:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\obj\\",
+      "outputPath": "c:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\elizabeth.marshall\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3995,8 +3995,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj": {
-              "projectPath": "C:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj"
+            "c:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj": {
+              "projectPath": "c:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj"
             }
           }
         }

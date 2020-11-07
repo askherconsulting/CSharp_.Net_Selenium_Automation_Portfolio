@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj": {}
+    "c:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj": {}
   },
   "projects": {
-    "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj": {
+    "c:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
+        "projectUniqueName": "c:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
         "projectName": "Framework",
-        "projectPath": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
+        "projectPath": "c:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
         "packagesPath": "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\",
-        "outputPath": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\obj\\",
+        "outputPath": "c:\\C#_Selenium_Automation_Portfolio\\Framework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elizabeth.marshall\\AppData\\Roaming\\NuGet\\NuGet.Config",

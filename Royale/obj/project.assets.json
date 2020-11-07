@@ -301,11 +301,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj",
+      "projectUniqueName": "c:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj",
       "projectName": "Royale",
-      "projectPath": "C:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj",
+      "projectPath": "c:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj",
       "packagesPath": "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\",
-      "outputPath": "C:\\C#_Selenium_Automation_Portfolio\\Royale\\obj\\",
+      "outputPath": "c:\\C#_Selenium_Automation_Portfolio\\Royale\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\elizabeth.marshall\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -321,8 +321,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj": {
-              "projectPath": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj"
+            "c:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj": {
+              "projectPath": "c:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj"
             }
           }
         }
