@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\Royale.Tests.csproj": {}
+    "C:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\Royale.Tests.csproj": {}
   },
   "projects": {
-    "c:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj": {
+    "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
+        "projectUniqueName": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
         "projectName": "Framework",
-        "projectPath": "c:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
+        "projectPath": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
         "packagesPath": "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\",
-        "outputPath": "c:\\C#_Selenium_Automation_Portfolio\\Framework\\obj\\",
+        "outputPath": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elizabeth.marshall\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -67,14 +67,14 @@
         }
       }
     },
-    "c:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\Royale.Tests.csproj": {
+    "C:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\Royale.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\Royale.Tests.csproj",
+        "projectUniqueName": "C:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\Royale.Tests.csproj",
         "projectName": "Royale.Tests",
-        "projectPath": "c:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\Royale.Tests.csproj",
+        "projectPath": "C:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\Royale.Tests.csproj",
         "packagesPath": "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\",
-        "outputPath": "c:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\obj\\",
+        "outputPath": "C:\\C#_Selenium_Automation_Portfolio\\Royale.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elizabeth.marshall\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -90,8 +90,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "c:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj": {
-                "projectPath": "c:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj"
+              "C:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj": {
+                "projectPath": "C:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj"
               }
             }
           }
@@ -145,14 +145,14 @@
         }
       }
     },
-    "c:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj": {
+    "C:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj",
+        "projectUniqueName": "C:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj",
         "projectName": "Royale",
-        "projectPath": "c:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj",
+        "projectPath": "C:\\C#_Selenium_Automation_Portfolio\\Royale\\Royale.csproj",
         "packagesPath": "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\",
-        "outputPath": "c:\\C#_Selenium_Automation_Portfolio\\Royale\\obj\\",
+        "outputPath": "C:\\C#_Selenium_Automation_Portfolio\\Royale\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elizabeth.marshall\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -168,8 +168,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "c:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj": {
-                "projectPath": "c:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj"
+              "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj": {
+                "projectPath": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj"
               }
             }
           }

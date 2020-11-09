@@ -12,9 +12,9 @@ namespace Royale.Pages
             Map = new HeaderNavMap(driver);
         }
 
-        public void GotoCardsPage()
+        public void GotoSupportPage()
         {
-            Map.CardsTabLink.Click();
+            Map.SupportLink.Click();
         }
     }
 
@@ -27,6 +27,7 @@ namespace Royale.Pages
             _driver = driver;
         }
 
-        public IWebElement CardsTabLink => _driver.FindElement(By.CssSelector("a[href*='/support']"));
+        public IWebElement SupportLink => _driver.FindElement(By.CssSelector("a[href*='/support']"));
+
     }
 }
