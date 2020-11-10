@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace Royale.Pages
+namespace AIT.Pages
 {
     public class HomePage : PageBase
     {

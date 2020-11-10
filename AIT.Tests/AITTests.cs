@@ -7,7 +7,7 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.IO;
-using Royale.Pages;
+using AIT.Pages;
 
 
 
@@ -39,7 +39,7 @@ namespace Royale.Tests
             
            // var AITHomePage = new CardsPage(driver);
             //1. go to AIT Homepage
-        //    var homePage = new HomePage(driver);
+            var homePage = new HomePage(driver);
             // driver.FindElement(By.Id("quicklook-principes")).Click();
           //  var support = cardsPage.Goto();
             // Assert.That(principles.Displayed);
