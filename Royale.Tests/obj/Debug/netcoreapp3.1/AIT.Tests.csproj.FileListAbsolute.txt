@@ -1,4 +1,0 @@
-C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.csprojAssemblyReference.cache
-C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.AssemblyInfoInputs.cache
-C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.AssemblyInfo.cs
-C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.csproj.CoreCompileInputs.cache
