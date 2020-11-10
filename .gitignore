@@ -19,3 +19,7 @@ Framework/obj/Debug/netstandard2.0/Framework.csprojAssemblyReference.cache
 Framework/obj/Debug/netstandard2.0/Framework.AssemblyInfo.cs
 Framework/bin/Debug/netstandard2.0/Framework.pdb
 Framework/bin/Debug/netstandard2.0/Framework.dll
+AIT/obj/Debug/netstandard2.0/AIT.assets.cache
+AIT.Tests/obj/Debug/netcoreapp3.1/AIT.Tests.assets.cache
+AIT.Tests/obj/Debug/netcoreapp3.1/AIT.Tests.csprojAssemblyReference.cache
+Framework/obj/Debug/netstandard2.0/Framework.assets.cache
