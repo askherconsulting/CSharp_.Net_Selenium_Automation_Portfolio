@@ -96,6 +96,10 @@ C:\c#_selenium4_framework_portfolio\Royale.Tests\obj\Debug\netcoreapp3.1\Royale.
 C:\c#_selenium4_framework_portfolio\Royale.Tests\obj\Debug\netcoreapp3.1\Royale.Tests.genruntimeconfig.cache
 C:\c#_selenium4_framework_portfolio\Royale.Tests\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
 C:\c#_selenium4_framework_portfolio\Royale.Tests\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\C#_Selenium_Automation_Portfolio\Royale.Tests\obj\Debug\netcoreapp3.1\Royale.Tests.csprojAssemblyReference.cache
+C:\C#_Selenium_Automation_Portfolio\Royale.Tests\obj\Debug\netcoreapp3.1\Royale.Tests.AssemblyInfoInputs.cache
+C:\C#_Selenium_Automation_Portfolio\Royale.Tests\obj\Debug\netcoreapp3.1\Royale.Tests.AssemblyInfo.cs
+C:\C#_Selenium_Automation_Portfolio\Royale.Tests\obj\Debug\netcoreapp3.1\Royale.Tests.csproj.CoreCompileInputs.cache
 C:\C#_Selenium_Automation_Portfolio\Royale.Tests\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
 C:\C#_Selenium_Automation_Portfolio\Royale.Tests\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
 C:\C#_Selenium_Automation_Portfolio\Royale.Tests\bin\Debug\netcoreapp3.1\nunit.engine.dll
@@ -190,10 +194,6 @@ C:\C#_Selenium_Automation_Portfolio\Royale.Tests\bin\Debug\netcoreapp3.1\Framewo
 C:\C#_Selenium_Automation_Portfolio\Royale.Tests\bin\Debug\netcoreapp3.1\Royale.dll
 C:\C#_Selenium_Automation_Portfolio\Royale.Tests\bin\Debug\netcoreapp3.1\Royale.pdb
 C:\C#_Selenium_Automation_Portfolio\Royale.Tests\bin\Debug\netcoreapp3.1\Framework.pdb
-C:\C#_Selenium_Automation_Portfolio\Royale.Tests\obj\Debug\netcoreapp3.1\Royale.Tests.csprojAssemblyReference.cache
-C:\C#_Selenium_Automation_Portfolio\Royale.Tests\obj\Debug\netcoreapp3.1\Royale.Tests.AssemblyInfoInputs.cache
-C:\C#_Selenium_Automation_Portfolio\Royale.Tests\obj\Debug\netcoreapp3.1\Royale.Tests.AssemblyInfo.cs
-C:\C#_Selenium_Automation_Portfolio\Royale.Tests\obj\Debug\netcoreapp3.1\Royale.Tests.csproj.CoreCompileInputs.cache
 C:\C#_Selenium_Automation_Portfolio\Royale.Tests\obj\Debug\netcoreapp3.1\Royale.Tests.csproj.CopyComplete
 C:\C#_Selenium_Automation_Portfolio\Royale.Tests\obj\Debug\netcoreapp3.1\Royale.Tests.dll
 C:\C#_Selenium_Automation_Portfolio\Royale.Tests\obj\Debug\netcoreapp3.1\Royale.Tests.pdb

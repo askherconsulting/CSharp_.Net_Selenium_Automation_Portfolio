@@ -13,7 +13,7 @@ using Royale.Pages;
 
 namespace Royale.Tests
 {
-   public class CardTests
+   public class AITTests
 
     {
         IWebDriver driver;
@@ -80,11 +80,11 @@ namespace Royale.Tests
         public void Bandit_headers_are_correct_on_Card_Details_Page()
         {
       //      new CardsPage(driver).Goto().GetCardByName("Three Musketeers").Click();
-            var cardDetails = new CardDetailsPage(driver);
+            var cardDetails = new BlogPage(driver);
 
             var (category, arena) = cardDetails.GetCardCategory();
-            var cardName = cardDetails.Map.CardName.Text;
-            var cardRarity = cardDetails.Map.CardRarity.Text;
+            var cardName = cardDetails.Map.BlogName.Text;
+            var cardRarity = cardDetails.Map.BlogDate.Text;
 
             Assert.AreEqual("Three Musketeers", cardName);
             Assert.AreEqual("Troop", category);
