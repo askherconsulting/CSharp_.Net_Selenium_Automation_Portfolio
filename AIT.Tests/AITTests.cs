@@ -1,19 +1,14 @@
-using Microsoft.VisualBasic;
-using System.Collections;
-using System.Collections.ObjectModel;
-using System.Reflection;
-using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.IO;
-using Royale.Pages;
+using AIT.Pages;
 
 
 
-namespace Royale.Tests
+namespace AIT.Tests
 {
-   public class AITTests
+    public class AITTests
 
     {
         IWebDriver driver;
@@ -24,22 +19,27 @@ namespace Royale.Tests
             driver = new ChromeDriver(Path.GetFullPath(@"../../../../" + "_drivers"));
             //1. Maximise window
             driver.Manage().Window.Maximize();
-            driver.Url = "https://automationintesting.com";
+            driver.Url = "https://demo.opencart.com/admin/";
         }
 
         [TearDown]
         public void AfterEach()
         {
-            driver.Quit();
+         //   driver.Quit();
         }
 
         [Test]
-        public void Principles_Is_Navigable()
+        public void Login()
         {
             
-           // var AITHomePage = new CardsPage(driver);
-            //1. go to AIT Homepage
-        //    var homePage = new HomePage(driver);
+            var LoginPage = new LoginPage(driver);
+            LoginPage.Login("demo", "demo");
+            var homePage = new HomePage(driver);
+            //do an assert
+            
+
+        //    new HomePage(driver).Goto().GetLinkByName("")
+      //      var homePage = new HomePage(driver);
             // driver.FindElement(By.Id("quicklook-principes")).Click();
           //  var support = cardsPage.Goto();
             // Assert.That(principles.Displayed);
@@ -52,6 +52,9 @@ namespace Royale.Tests
         [Test]
         public void Support_is_Navigable()
         {
+     //     new HomePage(driver).Goto().GetLinkByName("SUPPORT AUTOMATION IN TESTING").Click();
+       //   var support = HeaderNavMap.
+       //   Assert.AreEqual("SUPPORT AUTOMATION IN TESTING", support);
             // //1. Maximise window
             // driver.Manage().Window.Maximize();
             // //2. go to AIT home page         
@@ -68,10 +71,10 @@ namespace Royale.Tests
       //      var support1 = CardDetailsPage.Map
       //      var support1 = cardsPage.Goto();
              // //5. Assert principles section shown
-            var support = driver.FindElement(By.ClassName("info-title")).Text;
+         //   var support = driver.FindElement(By.ClassName("info-title")).Text;
             
        //     Assert.That(support.Equals("SUPPORT AUTOMATION IN TESTING"));
-            Assert.AreEqual("SUPPORT AUTOMATION IN TESTING", support);
+        //    Assert.AreEqual("SUPPORT AUTOMATION IN TESTING", support);
        //     var iceSpirit = cardsPage.Goto().GetCardByName("Ice Spirit");
        //     Assert.That(iceSpirit.Displayed);
         }
