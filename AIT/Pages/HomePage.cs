@@ -1,4 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using System.Net.Mime;
+using System.Data;
+using OpenQA.Selenium;
 
 namespace AIT.Pages
 {
@@ -13,16 +15,9 @@ namespace AIT.Pages
             Map = new HomePageMap(driver);
         }
 
-       public HomePage Goto()
+        public HomePage EnterBookingDetails( string phone, string subject, string description)
        {
-            HeaderNav.GotoSupportPage();
-            return this;
-       }
-
-        public HomePage EnterBookingDetails(string name, string email, string phone, string subject, string description)
-       {
-           Map.Name.SendKeys(name);
-           Map.Email.SendKeys(email);
+  
            Map.Phone.SendKeys(phone);
            Map.Subject.SendKeys(subject);
            Map.Description.SendKeys(description);
@@ -38,16 +33,16 @@ namespace AIT.Pages
     //    }
     }
 
-    //    public IWebElement GetLinkByName(string LinkHRef)
-        // {
-        //     // Given the cardName "Link+Name" => should turn into "Link Name" to work with our locator.
-        //     if (LinkHRef.Contains("+"))
-        //     {
-        //         LinkHRef = LinkHRef.Replace("+", " ");
-        //     }
+        // public IWebElement TextIsDisplayed(string Text)
+        //  {
+        //      // Given the cardName "Link+Name" => should turn into "Link Name" to work with our locator.
+        //      if (Map.DashboardTitle.Contains("+"))
+        //      {
+        //          LinkHRef = LinkHRef.Replace("+", " ");
+        //      }
 
-        //    return Map.Link(LinkHRef);
- //       }
+        //     return Map.Link(LinkHRef);
+        // }
     
 
     //this class maps all the elements you need on this page
@@ -60,9 +55,7 @@ namespace AIT.Pages
             _driver = driver;
         }
         //example of dynamic element reference
-        public IWebElement Name => _driver.FindElement(By.Id("name"));
-
-        public IWebElement Email => _driver.FindElement(By.Id("email"));
+        public IWebElement DashboardTitle => _driver.FindElement(By.XPath("//*[h1='Dashboard']"));
 
         public IWebElement Phone => _driver.FindElement(By.Id("phone"));
 

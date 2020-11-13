@@ -1,8 +1,3 @@
-using Microsoft.VisualBasic;
-using System.Collections;
-using System.Collections.ObjectModel;
-using System.Reflection;
-using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -13,7 +8,7 @@ using AIT.Pages;
 
 namespace AIT.Tests
 {
-   public class AITTests
+    public class AITTests
 
     {
         IWebDriver driver;
@@ -24,7 +19,7 @@ namespace AIT.Tests
             driver = new ChromeDriver(Path.GetFullPath(@"../../../../" + "_drivers"));
             //1. Maximise window
             driver.Manage().Window.Maximize();
-            driver.Url = "https://automationintesting.online/#/";
+            driver.Url = "https://demo.opencart.com/admin/";
         }
 
         [TearDown]
@@ -34,12 +29,13 @@ namespace AIT.Tests
         }
 
         [Test]
-        public void Book_A_Room()
+        public void Login()
         {
             
-            //1. go to Homepage and fill out form
+            var LoginPage = new LoginPage(driver);
+            LoginPage.Login("demo", "demo");
             var homePage = new HomePage(driver);
-            homePage.EnterBookingDetails("Beth", "test@test.com", "07707393333", "wow", "please can I book this room its awesome thanks!");
+            //do an assert
             
 
         //    new HomePage(driver).Goto().GetLinkByName("")
