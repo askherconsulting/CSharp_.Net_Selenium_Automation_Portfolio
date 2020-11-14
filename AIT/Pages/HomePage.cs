@@ -55,8 +55,7 @@ namespace AIT.Pages
 
         public IWebElement SubmitButton => _driver.FindElement(By.Id("submitContact"));
 
-        public IWebElement LogoutButton => _driver.FindElement(RelativeBy.WithTagName("li").RightOf(By.ClassName("dropdown")));
-  
         public IWebElement Description => _driver.FindElement(By.Id("description"));
+        public IWebElement LogoutButton => _driver.FindElement(RelativeBy.WithTagName("li").RightOf(By.ClassName("dropdown")));
     }
 }

@@ -24,13 +24,6 @@ namespace AIT.Pages
             _driver = driver;
         }
         //example of dynamic element reference
-        public IWebElement Name => _driver.FindElement(By.Id("input-username"));
-
-         public IWebElement Password => _driver.FindElement(By.Id("input-password"));
-
-        public IWebElement LoginButton => _driver.FindElement(By.XPath("//button[contains(text(),'Login')]"));
-//*[@id='select-students-update-panel']//*[contains(text(), 'Update students')]
         public IWebElement OrdersPageTitle => _driver.FindElement(By.XPath("//*[h1]//*[contains(text(), 'Orders')]"));
-  //      public IWebElement ThankyouMessage =>_driver.FindElement(By.CssSelector("div[class='row contact']"));
     }
 }
