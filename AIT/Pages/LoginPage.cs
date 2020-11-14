@@ -13,12 +13,6 @@ namespace AIT.Pages
             Map = new LoginPageMap(driver);
         }
 
-       public LoginPage Goto()
-       {
-            HeaderNav.GotoSupportPage();
-            return this;
-       }
-
         public LoginPage Login(string name, string password)
        {
            Map.Name.Clear();

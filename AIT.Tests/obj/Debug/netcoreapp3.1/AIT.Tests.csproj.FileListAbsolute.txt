@@ -1,7 +1,3 @@
-C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.csprojAssemblyReference.cache
-C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.AssemblyInfoInputs.cache
-C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.AssemblyInfo.cs
-C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.csproj.CoreCompileInputs.cache
 C:\C#_Selenium_Automation_Portfolio\AIT.Tests\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
 C:\C#_Selenium_Automation_Portfolio\AIT.Tests\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
 C:\C#_Selenium_Automation_Portfolio\AIT.Tests\bin\Debug\netcoreapp3.1\nunit.engine.dll
@@ -96,6 +92,10 @@ C:\C#_Selenium_Automation_Portfolio\AIT.Tests\bin\Debug\netcoreapp3.1\AIT.dll
 C:\C#_Selenium_Automation_Portfolio\AIT.Tests\bin\Debug\netcoreapp3.1\Framework.dll
 C:\C#_Selenium_Automation_Portfolio\AIT.Tests\bin\Debug\netcoreapp3.1\AIT.pdb
 C:\C#_Selenium_Automation_Portfolio\AIT.Tests\bin\Debug\netcoreapp3.1\Framework.pdb
+C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.csprojAssemblyReference.cache
+C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.AssemblyInfoInputs.cache
+C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.AssemblyInfo.cs
+C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.csproj.CoreCompileInputs.cache
 C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.csproj.CopyComplete
 C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.dll
 C:\C#_Selenium_Automation_Portfolio\AIT.Tests\obj\Debug\netcoreapp3.1\AIT.Tests.pdb

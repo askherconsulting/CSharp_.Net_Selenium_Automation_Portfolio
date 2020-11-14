@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Threading;
+using System;
 using OpenQA.Selenium;
 
 namespace AIT.Pages
@@ -14,6 +15,8 @@ namespace AIT.Pages
 
         public void GotoOrdersPage()
         {
+            Map.SalesLink.Click();
+            
             Map.OrdersLink.Click();
         }
     }
@@ -27,7 +30,9 @@ namespace AIT.Pages
             _driver = driver;
         }
 
-        public IWebElement OrdersLink => _driver.FindElement(By.XPath("//*[@id='menu-sale']//*[@id='menu-sale']"));
+        public IWebElement OrdersLink => _driver.FindElement(By.XPath("//*[@id='menu-sale']//*[contains(text(),'Orders')]"));
 
+        public IWebElement SalesLink => _driver.FindElement(By.XPath("//*[@id='menu-sale']"));
+ 
     }
 }

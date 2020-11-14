@@ -47,37 +47,19 @@ namespace AIT.Tests
             var homePage = new HomePage(driver);
             homePage.Logout(driver);
             var logoutPageText = loginPage.Map.LoginPageTitle.Text;
-            Assert.AreEqual(" Please enter your login details.", logoutPageText);
+            Assert.AreEqual("Please enter your login details.", logoutPageText);
         }
 
         [Test]
-        public void Support_is_Navigable()
+        public void viewOrders()
         {
-     //     new HomePage(driver).Goto().GetLinkByName("SUPPORT AUTOMATION IN TESTING").Click();
-       //   var support = HeaderNavMap.
-       //   Assert.AreEqual("SUPPORT AUTOMATION IN TESTING", support);
-            // //1. Maximise window
-            // driver.Manage().Window.Maximize();
-            // //2. go to AIT home page         
-            // driver.Url = "https://automationintesting.com";
-            // //4. click principles area
-            // driver.FindElement(By.CssSelector("a[href*='/support']")).Click();
-            // //5. Assert principles section shown
-            // var support = driver.FindElement(By.ClassName("info-title")).Text;
-            // Assert.That(support.Equals("SUPPORT AUTOMATION IN TESTING"));
-
-            //1. 
-      //      var cardsPage = new CardsPage(driver);
-
-      //      var support1 = CardDetailsPage.Map
-      //      var support1 = cardsPage.Goto();
-             // //5. Assert principles section shown
-         //   var support = driver.FindElement(By.ClassName("info-title")).Text;
-            
-       //     Assert.That(support.Equals("SUPPORT AUTOMATION IN TESTING"));
-        //    Assert.AreEqual("SUPPORT AUTOMATION IN TESTING", support);
-       //     var iceSpirit = cardsPage.Goto().GetCardByName("Ice Spirit");
-       //     Assert.That(iceSpirit.Displayed);
+            var loginPage = new LoginPage(driver);
+            loginPage.Login("demo", "demo");
+            var homePage = new HomePage(driver);
+            var goToOrdersPage = homePage.GoTo();
+            var ordersPage = new OrdersPage(driver);
+            var orderPageText = ordersPage.Map.OrdersPageTitle.Text;
+            Assert.AreEqual("Orders", orderPageText);
         }
     }
 }
