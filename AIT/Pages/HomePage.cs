@@ -1,7 +1,4 @@
-﻿using System.Reflection;
-using System.Net.Mime;
-using System.Data;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 
 namespace AIT.Pages
@@ -38,28 +35,9 @@ namespace AIT.Pages
            Map.LogoutButton.Click();
            return this;
        }
-
-    //      public HomePage thankyouMessage()
-    //    {
-    //        //v
-    //        Map.ThankyouMessage.Contains();
-    //        return this;
-    //    }
     }
-
-        // public IWebElement TextIsDisplayed(string Text)
-        //  {
-        //      // Given the cardName "Link+Name" => should turn into "Link Name" to work with our locator.
-        //      if (Map.DashboardTitle.Contains("+"))
-        //      {
-        //          LinkHRef = LinkHRef.Replace("+", " ");
-        //      }
-
-        //     return Map.Link(LinkHRef);
-        // }
-    
-
-    //this class maps all the elements you need on this page
+   
+     //this class maps all the elements you need on this page
     public class HomePageMap
     {
         IWebDriver _driver;
@@ -79,8 +57,6 @@ namespace AIT.Pages
 
         public IWebElement LogoutButton => _driver.FindElement(RelativeBy.WithTagName("li").RightOf(By.ClassName("dropdown")));
   
-         public IWebElement Description => _driver.FindElement(By.Id("description"));
-
-  //      public IWebElement ThankyouMessage =>_driver.FindElement(By.CssSelector("div[class='row contact']"));
+        public IWebElement Description => _driver.FindElement(By.Id("description"));
     }
 }
