@@ -29,10 +29,6 @@ namespace AIT.Pages
            return this;
        }
 
-        public LoginPage AssertLoginPageVisible(IWebDriver driver) {
-	    Map.LoginPageTitle.Click();
-        return this;
-	}
 
     //      public LoginPage thankyouMessage()
     //    {

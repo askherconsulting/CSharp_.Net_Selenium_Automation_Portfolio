@@ -17,7 +17,6 @@ namespace AIT.Tests
         public void BeforeEach()
         {
             driver = new ChromeDriver(Path.GetFullPath(@"../../../../" + "_drivers"));
-            //1. Maximise window
             driver.Manage().Window.Maximize();
             driver.Url = "https://demo.opencart.com/admin/";
         }
@@ -36,17 +35,8 @@ namespace AIT.Tests
             loginPage.Login("demo", "demo");
             var homePage = new HomePage(driver);
             //do an assert
-            homePage.AssertHomePageVisible(driver);
-
-        //    new HomePage(driver).Goto().GetLinkByName("")
-      //      var homePage = new HomePage(driver);
-            // driver.FindElement(By.Id("quicklook-principes")).Click();
-          //  var support = cardsPage.Goto();
-            // Assert.That(principles.Displayed);
-         //   new CardsPage(driver).Goto().GetCardByName("Three Musketeers").Click();
-         //   var iceSpirit = AITHomePage.Goto().GetCardByName("Ice Spirit");
-         
-        //    Assert.That(principles.Displayed);
+            var dashboardTitleText = homePage.Map.DashboardTitle.Text;
+            Assert.AreEqual("Dashboard Home Dashboard", dashboardTitleText);
         }
 
         [Test]
@@ -56,7 +46,8 @@ namespace AIT.Tests
             loginPage.Login("demo", "demo");
             var homePage = new HomePage(driver);
             homePage.Logout(driver);
-            loginPage.AssertLoginPageVisible(driver);
+            var logoutPageText = loginPage.Map.LoginPageTitle.Text;
+            Assert.AreEqual(" Please enter your login details.", logoutPageText);
         }
 
         [Test]

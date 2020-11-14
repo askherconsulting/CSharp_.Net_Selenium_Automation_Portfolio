@@ -27,11 +27,6 @@ namespace AIT.Pages
            return this;
        }
 
-       public HomePage AssertHomePageVisible(IWebDriver driver) {
-	    Map.DashboardTitle.Click();
-        return this;
-	}
-
         public HomePage Logout(IWebDriver driver)
        {
            Map.LogoutButton.Click();
