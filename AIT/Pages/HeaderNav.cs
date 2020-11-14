@@ -1,5 +1,4 @@
-﻿using System;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 namespace AIT.Pages
 {
@@ -12,9 +11,11 @@ namespace AIT.Pages
             Map = new HeaderNavMap(driver);
         }
 
-        public void GotoSupportPage()
+        public void GotoOrdersPage()
         {
-            Map.SupportLink.Click();
+            Map.SalesLink.Click();
+            
+            Map.OrdersLink.Click();
         }
     }
 
@@ -27,7 +28,9 @@ namespace AIT.Pages
             _driver = driver;
         }
 
-        public IWebElement SupportLink => _driver.FindElement(By.CssSelector("a[href*='/support']"));
+        public IWebElement OrdersLink => _driver.FindElement(By.XPath("//*[@id='menu-sale']//*[contains(text(),'Orders')]"));
 
+        public IWebElement SalesLink => _driver.FindElement(By.XPath("//*[@id='menu-sale']"));
+ 
     }
 }
