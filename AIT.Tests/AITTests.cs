@@ -25,7 +25,7 @@ namespace AIT.Tests
         [TearDown]
         public void AfterEach()
         {
-         //   driver.Quit();
+            driver.Quit();
         }
 
         [Test]
@@ -55,9 +55,7 @@ namespace AIT.Tests
             var loginPage = new LoginPage(driver);
             loginPage.Login("demo", "demo");
             var homePage = new HomePage(driver);
-            //investigate why cannot click logout button
             homePage.Logout(driver);
-            //do an assert
             loginPage.AssertLoginPageVisible(driver);
         }
 

@@ -70,7 +70,7 @@ namespace AIT.Pages
 
         public IWebElement LoginButton => _driver.FindElement(By.XPath("//button[contains(text(),'Login')]"));
 //*[@id='select-students-update-panel']//*[contains(text(), 'Update students')]
-        public IWebElement LoginPageTitle => _driver.FindElement(By.XPath("//*[h1='panel-title']//*[contains(text(), 'Please enter your login details.')}"));
+        public IWebElement LoginPageTitle => _driver.FindElement(By.XPath("//*[h1]//*[contains(text(), 'Please enter your login details.')]"));
   //      public IWebElement ThankyouMessage =>_driver.FindElement(By.CssSelector("div[class='row contact']"));
     }
 }
