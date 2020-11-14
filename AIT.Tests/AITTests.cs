@@ -79,21 +79,5 @@ namespace AIT.Tests
        //     var iceSpirit = cardsPage.Goto().GetCardByName("Ice Spirit");
        //     Assert.That(iceSpirit.Displayed);
         }
-        
-          [Test]
-        public void Bandit_headers_are_correct_on_Card_Details_Page()
-        {
-      //      new CardsPage(driver).Goto().GetCardByName("Three Musketeers").Click();
-            // var cardDetails = new BlogPage(driver);
-
-            // var (category, arena) = cardDetails.GetCardCategory();
-            // var cardName = cardDetails.Map.BlogName.Text;
-            // var cardRarity = cardDetails.Map.BlogDate.Text;
-
-            // Assert.AreEqual("Three Musketeers", cardName);
-            // Assert.AreEqual("Troop", category);
-            // Assert.AreEqual("Arena 7", arena);
-            // Assert.AreEqual("Rarity\r\nRare", cardRarity);
-        }
     }
 }

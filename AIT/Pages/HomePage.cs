@@ -17,6 +17,12 @@ namespace AIT.Pages
             Map = new HomePageMap(driver);
         }
 
+        public HomePage GoTo()
+        {
+            HeaderNav.GotoOrdersPage();
+            return this;
+        }
+
         public HomePage EnterBookingDetails( string phone, string subject, string description)
        {
   

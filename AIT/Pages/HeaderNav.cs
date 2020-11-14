@@ -12,9 +12,9 @@ namespace AIT.Pages
             Map = new HeaderNavMap(driver);
         }
 
-        public void GotoSupportPage()
+        public void GotoOrdersPage()
         {
-            Map.SupportLink.Click();
+            Map.OrdersLink.Click();
         }
     }
 
@@ -27,7 +27,7 @@ namespace AIT.Pages
             _driver = driver;
         }
 
-        public IWebElement SupportLink => _driver.FindElement(By.CssSelector("a[href*='/support']"));
+        public IWebElement OrdersLink => _driver.FindElement(By.XPath("//*[@id='menu-sale']//*[@id='menu-sale']"));
 
     }
 }
