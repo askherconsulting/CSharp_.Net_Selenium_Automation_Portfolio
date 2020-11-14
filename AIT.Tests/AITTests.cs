@@ -29,17 +29,15 @@ namespace AIT.Tests
 
         [Test, Category("basics")]
         public void Login()
-        {
-            
+        { 
             var loginPage = new LoginPage(driver);
             loginPage.Login("demo", "demo");
             var homePage = new HomePage(driver);
-            //do an assert
             var dashboardTitleText = homePage.Map.DashboardTitle.Text.Split("Home ")[1];
             Assert.AreEqual("Dashboard", dashboardTitleText);
         }
 
-        [Test]
+        [Test, Category("basics")]
         public void Logout()
         {
             var loginPage = new LoginPage(driver);
@@ -50,7 +48,7 @@ namespace AIT.Tests
             Assert.AreEqual("Please enter your login details.", logoutPageText);
         }
 
-        [Test]
+        [Test, Category("basics")]
         public void viewOrders()
         {
             var loginPage = new LoginPage(driver);
