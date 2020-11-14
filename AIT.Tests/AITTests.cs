@@ -56,7 +56,7 @@ namespace AIT.Tests
             loginPage.Login("demo", "demo");
             var homePage = new HomePage(driver);
             homePage.Logout(driver);
-            loginPage.AssertLoginPageVisible(driver);
+            loginPage.AssertLoginPageVisible(driver); 
         }
 
         [Test]
