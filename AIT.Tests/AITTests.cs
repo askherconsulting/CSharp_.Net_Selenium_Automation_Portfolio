@@ -27,7 +27,7 @@ namespace AIT.Tests
             driver.Quit();
         }
 
-        [Test]
+        [Test, Category("basics")]
         public void Login()
         {
             
@@ -35,8 +35,8 @@ namespace AIT.Tests
             loginPage.Login("demo", "demo");
             var homePage = new HomePage(driver);
             //do an assert
-            var dashboardTitleText = homePage.Map.DashboardTitle.Text;
-            Assert.AreEqual("Dashboard Home Dashboard", dashboardTitleText);
+            var dashboardTitleText = homePage.Map.DashboardTitle.Text.Split("Home ")[1];
+            Assert.AreEqual("Dashboard", dashboardTitleText);
         }
 
         [Test]
