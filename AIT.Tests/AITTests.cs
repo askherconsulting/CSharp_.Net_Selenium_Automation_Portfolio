@@ -32,11 +32,11 @@ namespace AIT.Tests
         public void Login()
         {
             
-            var LoginPage = new LoginPage(driver);
-            LoginPage.Login("demo", "demo");
+            var loginPage = new LoginPage(driver);
+            loginPage.Login("demo", "demo");
             var homePage = new HomePage(driver);
             //do an assert
-            
+            homePage.AssertHomePageVisible(driver);
 
         //    new HomePage(driver).Goto().GetLinkByName("")
       //      var homePage = new HomePage(driver);
@@ -47,6 +47,18 @@ namespace AIT.Tests
          //   var iceSpirit = AITHomePage.Goto().GetCardByName("Ice Spirit");
          
         //    Assert.That(principles.Displayed);
+        }
+
+        [Test]
+        public void Logout()
+        {
+            var loginPage = new LoginPage(driver);
+            loginPage.Login("demo", "demo");
+            var homePage = new HomePage(driver);
+            //investigate why cannot click logout button
+            homePage.Logout(driver);
+            //do an assert
+            loginPage.AssertLoginPageVisible(driver);
         }
 
         [Test]

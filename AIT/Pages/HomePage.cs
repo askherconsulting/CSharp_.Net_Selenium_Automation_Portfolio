@@ -1,6 +1,8 @@
-﻿using System.Net.Mime;
+﻿using System.Reflection;
+using System.Net.Mime;
 using System.Data;
 using OpenQA.Selenium;
+
 
 namespace AIT.Pages
 {
@@ -22,6 +24,17 @@ namespace AIT.Pages
            Map.Subject.SendKeys(subject);
            Map.Description.SendKeys(description);
            Map.SubmitButton.Click();
+           return this;
+       }
+
+       public HomePage AssertHomePageVisible(IWebDriver driver) {
+	    Map.DashboardTitle.Click();
+        return this;
+	}
+
+        public HomePage Logout(IWebDriver driver)
+       {
+           Map.LogoutButton.Click();
            return this;
        }
 
@@ -63,6 +76,8 @@ namespace AIT.Pages
 
         public IWebElement SubmitButton => _driver.FindElement(By.Id("submitContact"));
 
+        public IWebElement LogoutButton => _driver.FindElement(RelativeBy.WithTagName("li").LeftOf(By.ClassName("dropdown")));
+  
          public IWebElement Description => _driver.FindElement(By.Id("description"));
 
   //      public IWebElement ThankyouMessage =>_driver.FindElement(By.CssSelector("div[class='row contact']"));

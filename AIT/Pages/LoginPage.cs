@@ -29,6 +29,11 @@ namespace AIT.Pages
            return this;
        }
 
+        public LoginPage AssertLoginPageVisible(IWebDriver driver) {
+	    Map.LoginPageTitle.Click();
+        return this;
+	}
+
     //      public LoginPage thankyouMessage()
     //    {
     //        //v
@@ -64,7 +69,8 @@ namespace AIT.Pages
          public IWebElement Password => _driver.FindElement(By.Id("input-password"));
 
         public IWebElement LoginButton => _driver.FindElement(By.XPath("//button[contains(text(),'Login')]"));
-
+//*[@id='select-students-update-panel']//*[contains(text(), 'Update students')]
+        public IWebElement LoginPageTitle => _driver.FindElement(By.XPath("//*[h1='panel-title']//*[contains(text(), 'Please enter your login details.')}"));
   //      public IWebElement ThankyouMessage =>_driver.FindElement(By.CssSelector("div[class='row contact']"));
     }
 }
