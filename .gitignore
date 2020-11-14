@@ -54,3 +54,4 @@ AIT/bin/Debug/netstandard2.0/AIT.pdb
 AIT/obj/
 AIT/obj/Debug/netstandard2.0/AIT.dll
 AIT/obj/Debug/netstandard2.0/AIT.pdb
+AIT.Tests/bin/
