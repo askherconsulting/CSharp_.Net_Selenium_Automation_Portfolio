@@ -24,6 +24,6 @@ namespace AIT.Pages
             _driver = driver;
         }
  
-        public IWebElement OrdersPageTitle => _driver.FindElement(By.XPath("//*[h1]//*[contains(text(), 'Orders')]"));
+
     }
 }

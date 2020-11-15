@@ -32,9 +32,7 @@ namespace AIT.Tests
         { 
             var loginPage = new LoginPage(driver);
             loginPage.Login("demo", "demo");
-            var homePage = new HomePage(driver);
-            var dashboardTitleText = homePage.Map.DashboardTitle.Text.Split("Home ")[1];
-            Assert.AreEqual("Dashboard", dashboardTitleText);
+            Assert.That(driver.Title, Contains.Substring("Dashboard"));
         }
 
         [Test, Category("basics")]
@@ -58,9 +56,7 @@ namespace AIT.Tests
             var goToSalesMenu = homePage.GoToSalesMenu();
             wait.Until(driver => homePage.HeaderNav.Map.OrdersLink.Displayed);
             var goToOrdersMenu = homePage.GoToOrdersMenu();
-            var ordersPage = new OrdersPage(driver);
-            var orderPageText = ordersPage.Map.OrdersPageTitle.Text;
-            Assert.AreEqual("Orders", orderPageText);
+            Assert.AreEqual("Orders", driver.Title);
         }
     }
 }

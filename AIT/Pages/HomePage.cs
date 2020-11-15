@@ -62,9 +62,6 @@ namespace AIT.Pages
         {
             _driver = driver;
         }
-        //example of dynamic element reference
-        public IWebElement DashboardTitle => _driver.FindElement(By.XPath("//*[h1='Dashboard']"));
-
         public IWebElement Phone => _driver.FindElement(By.Id("phone"));
 
         public IWebElement Subject => _driver.FindElement(By.Id("subject"));
