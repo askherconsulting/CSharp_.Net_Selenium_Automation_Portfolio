@@ -26,6 +26,16 @@ namespace AIT.Pages
             return this;
         }
 
+/* this code comes from Carlos Kidmans course and is an example of how to get rid of an accept cookies prompt by waiting for it to not be visible anymore
+       
+        public void AcceptCookies()
+        {
+            Map.AcceptCookiesButton.Click();
+            Driver.Wait.Until(drvr => !Map.AcceptCookiesButton.Displayed);
+        }
+
+*/
+
         public HomePage EnterBookingDetails( string phone, string subject, string description)
        {
   
