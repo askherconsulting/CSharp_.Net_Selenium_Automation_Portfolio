@@ -56,6 +56,12 @@ namespace AIT.Pages
         public IWebElement SubmitButton => _driver.FindElement(By.Id("submitContact"));
 
         public IWebElement Description => _driver.FindElement(By.Id("description"));
+        
+        //relative locator example
         public IWebElement LogoutButton => _driver.FindElement(RelativeBy.WithTagName("li").RightOf(By.ClassName("dropdown")));
+        /*
+        /the same command in Java would be:-
+        / public IWebElement LogoutButtonJava => _driver.FindElement(withTagName("li").toRightOf(By.ClassName("dropdown")));
+        */
     }
 }
