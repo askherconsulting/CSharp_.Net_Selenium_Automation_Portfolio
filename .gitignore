@@ -81,3 +81,15 @@ AIT.Tests/obj/Debug/netcoreapp3.1/AIT.Tests.csprojAssemblyReference.cache
 AIT.Tests/obj/Debug/netcoreapp3.1/AIT.Tests.dll
 AIT.Tests/obj/Debug/netcoreapp3.1/AIT.Tests.pdb
 Framework/obj/Debug/netstandard2.0/Framework.assets.cache
+AIT/bin/Debug/netstandard2.0/AIT.dll
+AIT/bin/Debug/netstandard2.0/AIT.pdb
+AIT/obj/Debug/netstandard2.0/AIT.dll
+AIT/obj/Debug/netstandard2.0/AIT.pdb
+AIT.Tests/bin/Debug/netcoreapp3.1/AIT.dll
+AIT.Tests/bin/Debug/netcoreapp3.1/AIT.pdb
+AIT.Tests/bin/Debug/netcoreapp3.1/AIT.Tests.dll
+AIT.Tests/bin/Debug/netcoreapp3.1/AIT.Tests.pdb
+AIT.Tests/bin/Debug/netcoreapp3.1/nunit_random_seed.tmp
+AIT.Tests/obj/Debug/netcoreapp3.1/AIT.Tests.csprojAssemblyReference.cache
+AIT.Tests/obj/Debug/netcoreapp3.1/AIT.Tests.dll
+AIT.Tests/obj/Debug/netcoreapp3.1/AIT.Tests.pdb

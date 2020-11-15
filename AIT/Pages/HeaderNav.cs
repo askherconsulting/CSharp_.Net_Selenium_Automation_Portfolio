@@ -1,4 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 
 namespace AIT.Pages
 {
@@ -11,13 +13,18 @@ namespace AIT.Pages
             Map = new HeaderNavMap(driver);
         }
 
-        public void GotoOrdersPage()
+        public void GotoSalesMenuDropdown()
         {
             Map.SalesLink.Click();
-            
+        }
+    
+
+        public void GotoOrdersMenuDropdown()
+        {  
             Map.OrdersLink.Click();
         }
     }
+
 
     public class HeaderNavMap
     {
