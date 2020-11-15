@@ -26,6 +26,16 @@ namespace AIT.Pages
             return this;
         }
 
+/* this code comes from Carlos Kidmans course and is an example of how to get rid of an accept cookies prompt by waiting for it to not be visible anymore
+       
+        public void AcceptCookies()
+        {
+            Map.AcceptCookiesButton.Click();
+            Driver.Wait.Until(drvr => !Map.AcceptCookiesButton.Displayed);
+        }
+
+*/
+
         public HomePage EnterBookingDetails( string phone, string subject, string description)
        {
   
@@ -52,9 +62,6 @@ namespace AIT.Pages
         {
             _driver = driver;
         }
-        //example of dynamic element reference
-        public IWebElement DashboardTitle => _driver.FindElement(By.XPath("//*[h1='Dashboard']"));
-
         public IWebElement Phone => _driver.FindElement(By.Id("phone"));
 
         public IWebElement Subject => _driver.FindElement(By.Id("subject"));
