@@ -14,9 +14,15 @@ namespace AIT.Pages
             Map = new HomePageMap(driver);
         }
 
-        public HomePage GoTo()
+        public HomePage GoToSalesMenu()
         {
-            HeaderNav.GotoOrdersPage();
+            HeaderNav.GotoSalesMenuDropdown();
+            return this;
+        }
+
+        public HomePage GoToOrdersMenu()
+        {
+            HeaderNav.GotoOrdersMenuDropdown();
             return this;
         }
 

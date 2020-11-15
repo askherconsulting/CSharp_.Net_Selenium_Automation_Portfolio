@@ -1,10 +1,10 @@
+using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.IO;
 using AIT.Pages;
-
-
+using OpenQA.Selenium.Support.UI;
 
 namespace AIT.Tests
 {
@@ -51,10 +51,13 @@ namespace AIT.Tests
         [Test, Category("basics")]
         public void viewOrders()
         {
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             var loginPage = new LoginPage(driver);
             loginPage.Login("demo", "demo");
             var homePage = new HomePage(driver);
-            var goToOrdersPage = homePage.GoTo();
+            var goToSalesMenu = homePage.GoToSalesMenu();
+            wait.Until(driver => homePage.HeaderNav.Map.OrdersLink.Displayed);
+            var goToOrdersMenu = homePage.GoToOrdersMenu();
             var ordersPage = new OrdersPage(driver);
             var orderPageText = ordersPage.Map.OrdersPageTitle.Text;
             Assert.AreEqual("Orders", orderPageText);
