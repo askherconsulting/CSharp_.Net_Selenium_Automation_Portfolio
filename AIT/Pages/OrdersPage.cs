@@ -23,7 +23,7 @@ namespace AIT.Pages
         {
             _driver = driver;
         }
-        //example of dynamic element reference
+ 
         public IWebElement OrdersPageTitle => _driver.FindElement(By.XPath("//*[h1]//*[contains(text(), 'Orders')]"));
     }
 }
