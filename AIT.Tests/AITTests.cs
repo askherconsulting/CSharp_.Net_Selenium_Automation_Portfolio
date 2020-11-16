@@ -2,31 +2,17 @@ using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System.IO;
 using AIT.Pages;
+using Framework;
 using OpenQA.Selenium.Support.UI;
+using Tests.Base;
 
 namespace AIT.Tests
 {
-    public class AITTests
+    public class AITTests : TestBase
 
     {
-        IWebDriver driver;
-
-        [SetUp]
-        public void BeforeEach()
-        {
-            driver = new ChromeDriver(Path.GetFullPath(@"../../../../" + "_drivers"));
-            driver.Manage().Window.Maximize();
-            driver.Url = "https://demo.opencart.com/admin/";
-        }
-
-        [TearDown]
-        public void AfterEach()
-        {
-            driver.Quit();
-        }
-
+        
         [Test, Category("basics")]
         public void Login()
         { 

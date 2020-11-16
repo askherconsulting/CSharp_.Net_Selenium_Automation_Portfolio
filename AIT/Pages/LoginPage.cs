@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using Framework;
 
 namespace AIT.Pages
 {
@@ -15,6 +16,7 @@ namespace AIT.Pages
 
         public LoginPage Login(string name, string password)
        {
+           FW.Log.Step("Login");
            Map.Name.Clear();
            Map.Name.SendKeys(name);
            Map.Password.Clear();
@@ -34,7 +36,6 @@ namespace AIT.Pages
         {
             _driver = driver;
         }
-        //example of dynamic element reference
         public IWebElement Name => _driver.FindElement(By.Id("input-username"));
 
         public IWebElement Password => _driver.FindElement(By.Id("input-password"));

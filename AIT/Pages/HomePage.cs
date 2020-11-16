@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using Framework;
 
 
 namespace AIT.Pages
@@ -16,12 +17,14 @@ namespace AIT.Pages
 
         public HomePage GoToSalesMenu()
         {
+            FW.Log.Step("Navigate to Sales side bar menu");
             HeaderNav.GotoSalesMenuDropdown();
             return this;
         }
 
         public HomePage GoToOrdersMenu()
         {
+            FW.Log.Step("Navigate to Sales -> orders side bar menu");
             HeaderNav.GotoOrdersMenuDropdown();
             return this;
         }

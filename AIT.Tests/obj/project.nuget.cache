@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "v02puPbEgOvu2Tk49tCRk/WpAeXXPu12OXrwiTJrXUps1Tq61ZOMBmVN/WgYWk/zwc9dQJzj+voHXuM54CsXEw==",
+  "dgSpecHash": "t6fg+4GbgkM7R0tsyzcQpOrOqS2N1wQ3wXC3apzUFPebn2OfB3Mz6RV6AFWcmxHdVcJrrjwgyadWnYXGlyPFzA==",
   "success": true,
   "projectFilePath": "C:\\C#_Selenium_Automation_Portfolio\\AIT.Tests\\AIT.Tests.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,6 @@
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\microsoft.testplatform.testhost\\16.5.0\\microsoft.testplatform.testhost.16.5.0.nupkg.sha512",
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\microsoft.win32.registry\\4.3.0\\microsoft.win32.registry.4.3.0.nupkg.sha512",
-    "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "JtwhLtJ7FgMMLTs2ATogxCX4m7tEw9IdyCOo9Et3ZIb2FFnQVZAM1M74A2lmENb+d95OrLscePNkVl4vhvUB9A==",
+  "dgSpecHash": "91jkFZmyiApzMLYUe6pSSwVKJVKURrQEXGS+yGTuH6ikp/SXonltEJG/SyHnXp3jr/wPPLHW/2cN4czHfqzeuQ==",
   "success": true,
   "projectFilePath": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\selenium.support\\4.0.0-alpha05\\selenium.support.4.0.0-alpha05.nupkg.sha512",
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\selenium.webdriver\\4.0.0-alpha05\\selenium.webdriver.4.0.0-alpha05.nupkg.sha512"
   ],
