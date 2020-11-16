@@ -1,6 +1,5 @@
-﻿using System;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
+﻿using OpenQA.Selenium;
+using Framework;
 
 namespace AIT.Pages
 {
@@ -15,12 +14,14 @@ namespace AIT.Pages
 
         public void GotoSalesMenuDropdown()
         {
+            FW.Log.Step("Navigate to Sales side bar menu");
             Map.SalesLink.Click();
         }
     
 
         public void GotoOrdersMenuDropdown()
         {  
+            FW.Log.Step("Navigate to Sales -> orders side bar menu");
             Map.OrdersLink.Click();
         }
     }
