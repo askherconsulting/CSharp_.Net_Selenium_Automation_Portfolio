@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "91jkFZmyiApzMLYUe6pSSwVKJVKURrQEXGS+yGTuH6ikp/SXonltEJG/SyHnXp3jr/wPPLHW/2cN4czHfqzeuQ==",
+  "dgSpecHash": "pCiZzCqIxmH5Nc9ouDZ7R5ZugsS12jKzW4LiFII8y+MMNX25fJeiS6AckJ0a/5keWwK3020Pxqf16rnAykZ9gw==",
   "success": true,
-  "projectFilePath": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
+  "projectFilePath": "C:\\C#_Selenium_Automation_Mailinator\\Framework\\Framework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

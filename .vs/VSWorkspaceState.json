@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AIT.Tests",
+    "\\AIT.Tests\\Base",
+    "\\Framework",
+    "\\Framework\\Logging",
+    "\\TestResults",
+    "\\TestResults\\Login",
+    "\\TestResults\\Logout",
+    "\\TestResults\\viewOrders",
+    "\\_drivers"
+  ],
+  "SelectedNode": "\\AIT.sln",
+  "PreviewInSolutionExplorer": false
+}

@@ -329,11 +329,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
+      "projectUniqueName": "C:\\C#_Selenium_Automation_Mailinator\\Framework\\Framework.csproj",
       "projectName": "Framework",
-      "projectPath": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\Framework.csproj",
+      "projectPath": "C:\\C#_Selenium_Automation_Mailinator\\Framework\\Framework.csproj",
       "packagesPath": "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\",
-      "outputPath": "C:\\C#_Selenium_Automation_Portfolio\\Framework\\obj\\",
+      "outputPath": "C:\\C#_Selenium_Automation_Mailinator\\Framework\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\elizabeth.marshall\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -389,7 +389,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.405\\RuntimeIdentifierGraph.json"
       }
     }
   }
