@@ -1,4 +1,0 @@
-Starting timestamp: 09/02/2021 20:07:04
-Test: Click_Email_Link
-    [STEP]: Logging in
-[INFO]: Outcome: Failed

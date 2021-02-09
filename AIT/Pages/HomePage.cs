@@ -49,7 +49,7 @@ namespace AIT.Pages
            return this;
        }
 
-           public HomePage Login(IWebDriver driver)
+           public HomePage clickLoginButton(IWebDriver driver)
        {
            Map.LoginButton.Click();
            return this;
@@ -79,7 +79,7 @@ namespace AIT.Pages
 
         public IWebElement Description => _driver.FindElement(By.Id("description"));
 
-        public IWebElement LoginButton => _driver.FindElement(By.XPath("//button[contains(text(),'Login')]"));
+        public IWebElement LoginButton => _driver.FindElement(By.PartialLinkText("Login"));
         //relative locator example
         public IWebElement LogoutButton => _driver.FindElement(RelativeBy.WithTagName("li").RightOf(By.ClassName("dropdown")));
         /*

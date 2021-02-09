@@ -25,7 +25,6 @@ namespace Tests.Base
             FW.SetLogger();
             driver = new ChromeDriver(FW.WORKSPACE_DIRECTORY + "_drivers");
             driver.Manage().Window.Maximize();
-            driver.Url = "https://www.mailinator.com/v4/public/inboxes.jsp?to=beth123";
         }
 
         [TearDown]
@@ -46,7 +45,7 @@ namespace Tests.Base
                 FW.Log.Warning("Outcome: " + outcome);
             }
 
-     //       driver.Quit();
+            driver.Quit();
         }
     }
 }
