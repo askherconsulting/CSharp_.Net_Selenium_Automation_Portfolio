@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -6,6 +7,7 @@ using AIT.Pages;
 using Framework;
 using OpenQA.Selenium.Support.UI;
 using Tests.Base;
+
 
 namespace AIT.Tests
 {
@@ -17,7 +19,7 @@ namespace AIT.Tests
         public void Login()
         { 
             var loginPage = new LoginPage(driver);
-            loginPage.Login("bethmarshall2013@hotmail.co.uk", "Shameful-rabbit0");
+            loginPage.Login(AIT., "Shameful-rabbit0");
             var inboxPage = new InboxPage(driver);
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             wait.Until(driver => inboxPage.Map.email.Displayed);
