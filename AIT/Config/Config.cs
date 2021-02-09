@@ -1,3 +1,4 @@
+using System;
 using Framework;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
@@ -10,8 +11,8 @@ namespace Config.Base
 {
     public abstract class ConfigBase
     {
-        string username = "bethmarshall2013@hotmail.co.uk";
-        string password = "Shameful-rabbit0";
+        public string username = "bethmarshall2013@hotmail.co.uk";
+        public string password = "Shameful-rabbit0";
         
     }
 }

@@ -21,7 +21,7 @@ namespace AIT.Pages
 
         public MessagePage clickButton(IWebDriver driver)
        {
-           Map.button2.Click();
+           Map.button.Click();
            return this;
        }
     }
@@ -38,10 +38,9 @@ namespace AIT.Pages
 
         public IWebElement email => _driver.FindElement(By.XPath("//*[contains(text(),subject)]"));
 
-        public IWebElement button => _driver.FindElement(By.XPath("//*[contains(text(),ButtonText)]"));
-        public IWebElement textTab => _driver.FindElement(By.Id("pills-textbuthtml-tab"));
+                public IWebElement textTab => _driver.FindElement(By.Id("pills-textbuthtml-tab"));
 
-        public IWebElement button2 => _driver.FindElement(By.PartialLinkText("View event"));
+        public IWebElement button => _driver.FindElement(By.PartialLinkText("View event"));
         
 
     }
