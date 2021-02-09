@@ -17,8 +17,33 @@ namespace AIT.Tests
         public void Login()
         { 
             var loginPage = new LoginPage(driver);
-            loginPage.Login("demo", "demo");
-            Assert.That(driver.Title, Contains.Substring("Dashboard"));
+            loginPage.Login("bethmarshall2013@hotmail.co.uk", "Shameful-rabbit0");
+            var inboxPage = new InboxPage(driver);
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait.Until(driver => inboxPage.Map.email.Displayed);
+            inboxPage.openEmail(driver);
+            var messagePage = new MessagePage(driver);
+            // Click on the email
+
+            // Now switch to the email body iframe:
+            driver.SwitchTo().Frame("html_msg_body");
+            wait.Until(driver => messagePage.Map.button2.Displayed);
+            // Click on the email link 
+            messagePage.clickButton(driver);
+            // If you need to go back to the menu, don't forget to switch back:
+            driver.SwitchTo().DefaultContent();
+            
+            
+        //    messagePage.clickText(driver);
+        //    var textPage = new TextPage(driver);
+        //    textPage.clickLink("smoothwall.cloud");
+            
+        //    messagePage.clickButton("View event");
+            wait.Until(driver => driver.WindowHandles.Count == 2);
+            Assert.AreEqual(2, driver.WindowHandles.Count);
+        //    messagePage.clickLinks(driver);
+        //    var linksPage = new LinksPage(driver);
+        //    linksPage.viewLinks(driver);
         }
 
         [Test, Category("basics")]

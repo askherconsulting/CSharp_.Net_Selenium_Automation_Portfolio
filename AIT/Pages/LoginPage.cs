@@ -14,12 +14,10 @@ namespace AIT.Pages
             Map = new LoginPageMap(driver);
         }
 
-        public LoginPage Login(string name, string password)
+        public LoginPage Login(string email, string password)
        {
-           FW.Log.Step("Login");
-           Map.Name.Clear();
-           Map.Name.SendKeys(name);
-           Map.Password.Clear();
+           FW.Log.Step("Logging in");
+           Map.Email.SendKeys(email);
            Map.Password.SendKeys(password);
            Map.LoginButton.Click();
            return this;
@@ -36,11 +34,11 @@ namespace AIT.Pages
         {
             _driver = driver;
         }
-        public IWebElement Name => _driver.FindElement(By.Id("input-username"));
+        public IWebElement Email => _driver.FindElement(By.Id("many_login_email"));
 
-        public IWebElement Password => _driver.FindElement(By.Id("input-password"));
+        public IWebElement Password => _driver.FindElement(By.Id("many_login_password"));
 
-        public IWebElement LoginButton => _driver.FindElement(By.XPath("//button[contains(text(),'Login')]"));
+        public IWebElement LoginButton => _driver.FindElement(By.XPath("//*[contains(text(),'Log in')]"));
         
         public IWebElement LoginPageTitle => _driver.FindElement(By.XPath("//*[h1]//*[contains(text(), 'Please enter your login details.')]"));
     }

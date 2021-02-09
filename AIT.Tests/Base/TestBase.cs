@@ -22,7 +22,7 @@ namespace Tests.Base
             FW.SetLogger();
             driver = new ChromeDriver(FW.WORKSPACE_DIRECTORY + "_drivers");
             driver.Manage().Window.Maximize();
-            driver.Url = "https://demo.opencart.com/admin/";
+            driver.Url = "https://www.mailinator.com/v4/login.jsp";
         }
 
         [TearDown]
