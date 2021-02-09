@@ -1,3 +1,0 @@
-Starting timestamp: 09/02/2021 21:43:53
-Test: straight_to_mailinator
-[INFO]: Outcome: Passed
