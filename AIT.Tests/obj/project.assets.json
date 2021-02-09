@@ -7343,7 +7343,7 @@
       "AIT >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "NUnit3TestAdapter >= 3.16.1",
-      "Selenium.WebDriver.ChromeDriver >= *",
+      "Selenium.WebDriver.ChromeDriver >= 88.0.4324.9600",
       "Selenium.WebDriver.GeckoDriver.Win64 >= 0.27.0",
       "Selenium.WebDriver.MSEdgeDriver >= 86.0.622.38",
       "TestProject.SDK >= 0.65.0"
@@ -7355,11 +7355,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\AIT.Tests.csproj",
+      "projectUniqueName": "C:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\AIT.Tests.csproj",
       "projectName": "AIT.Tests",
-      "projectPath": "c:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\AIT.Tests.csproj",
+      "projectPath": "C:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\AIT.Tests.csproj",
       "packagesPath": "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\",
-      "outputPath": "c:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\obj\\",
+      "outputPath": "C:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\elizabeth.marshall\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7375,8 +7375,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "c:\\C#_Selenium_Automation_Mailinator\\AIT\\AIT.csproj": {
-              "projectPath": "c:\\C#_Selenium_Automation_Mailinator\\AIT\\AIT.csproj"
+            "C:\\C#_Selenium_Automation_Mailinator\\AIT\\AIT.csproj": {
+              "projectPath": "C:\\C#_Selenium_Automation_Mailinator\\AIT\\AIT.csproj"
             }
           }
         }
@@ -7400,7 +7400,7 @@
           },
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
-            "version": "[*, )"
+            "version": "[88.0.4324.9600, )"
           },
           "Selenium.WebDriver.GeckoDriver.Win64": {
             "target": "Package",

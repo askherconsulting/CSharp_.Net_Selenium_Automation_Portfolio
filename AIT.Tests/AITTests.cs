@@ -19,7 +19,7 @@ namespace AIT.Tests
         public void Login()
         { 
             var loginPage = new LoginPage(driver);
-            loginPage.Login(AIT., "Shameful-rabbit0");
+            loginPage.Login("", "Shameful-rabbit0");
             var inboxPage = new InboxPage(driver);
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             wait.Until(driver => inboxPage.Map.email.Displayed);

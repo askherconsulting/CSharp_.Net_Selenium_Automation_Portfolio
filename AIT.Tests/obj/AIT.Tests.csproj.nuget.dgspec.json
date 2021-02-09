@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\AIT.Tests.csproj": {}
+    "C:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\AIT.Tests.csproj": {}
   },
   "projects": {
-    "c:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\AIT.Tests.csproj": {
+    "C:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\AIT.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\AIT.Tests.csproj",
+        "projectUniqueName": "C:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\AIT.Tests.csproj",
         "projectName": "AIT.Tests",
-        "projectPath": "c:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\AIT.Tests.csproj",
+        "projectPath": "C:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\AIT.Tests.csproj",
         "packagesPath": "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\",
-        "outputPath": "c:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\obj\\",
+        "outputPath": "C:\\C#_Selenium_Automation_Mailinator\\AIT.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elizabeth.marshall\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "c:\\C#_Selenium_Automation_Mailinator\\AIT\\AIT.csproj": {
-                "projectPath": "c:\\C#_Selenium_Automation_Mailinator\\AIT\\AIT.csproj"
+              "C:\\C#_Selenium_Automation_Mailinator\\AIT\\AIT.csproj": {
+                "projectPath": "C:\\C#_Selenium_Automation_Mailinator\\AIT\\AIT.csproj"
               }
             }
           }
@@ -52,7 +52,7 @@
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[88.0.4324.9600, )"
             },
             "Selenium.WebDriver.GeckoDriver.Win64": {
               "target": "Package",
@@ -86,14 +86,14 @@
         }
       }
     },
-    "c:\\C#_Selenium_Automation_Mailinator\\AIT\\AIT.csproj": {
+    "C:\\C#_Selenium_Automation_Mailinator\\AIT\\AIT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\C#_Selenium_Automation_Mailinator\\AIT\\AIT.csproj",
+        "projectUniqueName": "C:\\C#_Selenium_Automation_Mailinator\\AIT\\AIT.csproj",
         "projectName": "AIT",
-        "projectPath": "c:\\C#_Selenium_Automation_Mailinator\\AIT\\AIT.csproj",
+        "projectPath": "C:\\C#_Selenium_Automation_Mailinator\\AIT\\AIT.csproj",
         "packagesPath": "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\",
-        "outputPath": "c:\\C#_Selenium_Automation_Mailinator\\AIT\\obj\\",
+        "outputPath": "C:\\C#_Selenium_Automation_Mailinator\\AIT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elizabeth.marshall\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -109,8 +109,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "c:\\C#_Selenium_Automation_Mailinator\\Framework\\Framework.csproj": {
-                "projectPath": "c:\\C#_Selenium_Automation_Mailinator\\Framework\\Framework.csproj"
+              "C:\\C#_Selenium_Automation_Mailinator\\Framework\\Framework.csproj": {
+                "projectPath": "C:\\C#_Selenium_Automation_Mailinator\\Framework\\Framework.csproj"
               }
             }
           }
@@ -145,14 +145,14 @@
         }
       }
     },
-    "c:\\C#_Selenium_Automation_Mailinator\\Framework\\Framework.csproj": {
+    "C:\\C#_Selenium_Automation_Mailinator\\Framework\\Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\C#_Selenium_Automation_Mailinator\\Framework\\Framework.csproj",
+        "projectUniqueName": "C:\\C#_Selenium_Automation_Mailinator\\Framework\\Framework.csproj",
         "projectName": "Framework",
-        "projectPath": "c:\\C#_Selenium_Automation_Mailinator\\Framework\\Framework.csproj",
+        "projectPath": "C:\\C#_Selenium_Automation_Mailinator\\Framework\\Framework.csproj",
         "packagesPath": "C:\\Users\\elizabeth.marshall\\.nuget\\packages\\",
-        "outputPath": "c:\\C#_Selenium_Automation_Mailinator\\Framework\\obj\\",
+        "outputPath": "C:\\C#_Selenium_Automation_Mailinator\\Framework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elizabeth.marshall\\AppData\\Roaming\\NuGet\\NuGet.Config",
