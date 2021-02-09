@@ -8,6 +8,8 @@ namespace Tests.Base
 {
     public abstract class TestBase
     {
+ 
+
         [OneTimeSetUp]
         public virtual void BeforeAll()
         {

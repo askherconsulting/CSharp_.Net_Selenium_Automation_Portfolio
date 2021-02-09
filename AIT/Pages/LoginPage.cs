@@ -14,11 +14,11 @@ namespace AIT.Pages
             Map = new LoginPageMap(driver);
         }
 
-        public LoginPage Login(string email, string password)
+        public LoginPage Login(IWebDriver driver)
        {
            FW.Log.Step("Logging in");
-           Map.Email.SendKeys(email);
-           Map.Password.SendKeys(password);
+           Map.Email.SendKeys("Bethmarshall2013@hotmail.co.uk");
+           Map.Password.SendKeys("Shameful-rabbit0");
            Map.LoginButton.Click();
            return this;
        }
