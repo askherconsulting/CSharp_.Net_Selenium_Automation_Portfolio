@@ -30,7 +30,7 @@ namespace AIT.Pages
             _driver = driver;
         }
 
-        public IWebElement email => _driver.FindElement(By.XPath("//*[contains(text(),'TEST - Alert')]"));
+        public IWebElement email => _driver.FindElement(By.XPath("//*[contains(text(),'WordPress')]"));
 
     }
 }

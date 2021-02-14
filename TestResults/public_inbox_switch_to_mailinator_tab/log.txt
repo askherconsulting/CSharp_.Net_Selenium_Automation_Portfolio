@@ -1,3 +1,0 @@
-Starting timestamp: 12/02/2021 09:44:21
-Test: public_inbox_switch_to_mailinator_tab
-[INFO]: Outcome: Passed

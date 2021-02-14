@@ -24,6 +24,12 @@ namespace AIT.Pages
            Map.button.Click();
            return this;
        }
+
+        public MessagePage clickTextLink(IWebDriver driver)
+       {
+           Map.textLink.Click();
+           return this;
+       }
     }
 
     //this class maps all the elements you need on this page
@@ -38,9 +44,11 @@ namespace AIT.Pages
 
         public IWebElement email => _driver.FindElement(By.XPath("//*[contains(text(),subject)]"));
 
-                public IWebElement textTab => _driver.FindElement(By.Id("pills-textbuthtml-tab"));
+        public IWebElement textTab => _driver.FindElement(By.Id("pills-textbuthtml-tab"));
 
-        public IWebElement button => _driver.FindElement(By.PartialLinkText("View event"));
+        public IWebElement button => _driver.FindElement(By.XPath("//*[contains(text(),'login=')]"));
+
+         public IWebElement textLink => _driver.FindElement(By.XPath("//*[contains(text(),'login=')]"));
         
 
     }
