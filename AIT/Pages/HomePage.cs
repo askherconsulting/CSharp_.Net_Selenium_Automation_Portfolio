@@ -15,20 +15,6 @@ namespace AIT.Pages
             Map = new HomePageMap(driver);
         }
 
-        public HomePage GoToSalesMenu()
-        {
-            FW.Log.Step("Navigate to Sales side bar menu");
-            HeaderNav.GotoSalesMenuDropdown();
-            return this;
-        }
-
-        public HomePage GoToOrdersMenu()
-        {
-            FW.Log.Step("Navigate to Sales -> orders side bar menu");
-            HeaderNav.GotoOrdersMenuDropdown();
-            return this;
-        }
-
 /* this code comes from Carlos Kidmans course and is an example of how to get rid of an accept cookies prompt by waiting for it to not be visible anymore
        
         public void AcceptCookies()

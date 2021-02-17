@@ -1,5 +1,4 @@
-﻿using System.Threading;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 namespace AIT.Pages
 {
@@ -22,13 +21,6 @@ namespace AIT.Pages
        }
 
        
-        public PasswordPage getAutoPassword(IWebDriver driver)
-       {          
-           string autoPassword = Map.passwordField.GetAttribute("value");
-                
-           return this;
-       }
-
         public PasswordPage clickResetPasswordButton(IWebDriver driver)
        {
            Map.button.Click();

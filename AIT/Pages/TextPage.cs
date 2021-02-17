@@ -13,6 +13,7 @@ namespace AIT.Pages
             Map = new TextPageMap(driver);
         }
 
+        //note raised issue that text link cannot be navigated to with Mailinator directly
         public TextPage clickLink(string linkText)
        {
            Map.Text.Click();
@@ -29,8 +30,6 @@ namespace AIT.Pages
         {
             _driver = driver;
         }
-
-        public IWebElement email => _driver.FindElement(By.XPath("//*[contains(text(subject))]"));
 
         public IWebElement Text => _driver.FindElement(By.XPath("//*[contains(text(),linkText)]"));
 

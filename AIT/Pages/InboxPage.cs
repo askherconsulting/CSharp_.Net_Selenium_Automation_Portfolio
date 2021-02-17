@@ -13,9 +13,17 @@ namespace AIT.Pages
             Map = new InboxPageMap(driver);
         }
 
-        public InboxPage openEmail(IWebDriver driver)
+        public InboxPage openEmail(IWebElement email)
        {
-           Map.email.Click();
+           email.Click();
+           return this;
+       }
+
+         public InboxPage selectInbox(string inboxName)
+       {
+           Map.inboxName.Clear();
+           Map.inboxName.SendKeys(inboxName);
+           Map.inboxName.SendKeys(Keys.Enter);
            return this;
        }
     }
@@ -30,7 +38,10 @@ namespace AIT.Pages
             _driver = driver;
         }
 
-        public IWebElement email => _driver.FindElement(By.XPath("//*[contains(text(),'WordPress')]"));
+        public IWebElement emailWP => _driver.FindElement(By.XPath("//*[contains(text(),'WordPress')]"));
+
+        public IWebElement emailSW => _driver.FindElement(By.XPath("//*[contains(text(),'View event')]"));
+        public IWebElement inboxName => _driver.FindElement(By.Id("inbox_field"));
 
     }
 }

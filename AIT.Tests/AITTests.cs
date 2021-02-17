@@ -1,13 +1,7 @@
-using System.Security.Cryptography;
-using System.Text;
-using System.Runtime.CompilerServices;
 using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using AIT.Pages;
-using Config.Base;
-using Framework;
 using OpenQA.Selenium.Support.UI;
 using Tests.Base;
 
@@ -34,11 +28,13 @@ namespace AIT.Tests
             var loginPage = new LoginPage(driver);
             loginPage.Login(username, password);
             //Go to private inbox
+            driver.Url = ("https://www.mailinator.com/v4/private/inboxes.jsp?to=beth");
             var inboxPage = new InboxPage(driver);
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            wait.Until(driver => inboxPage.Map.email.Displayed);
+            inboxPage.selectInbox("beth");
+            wait.Until(driver => inboxPage.Map.emailSW.Displayed);
             // Click on the email
-            inboxPage.openEmail(driver);
+            inboxPage.openEmail(inboxPage.Map.emailSW);
             var messagePage = new MessagePage(driver);
             // Now switch to the email body iframe:
             driver.SwitchTo().Frame("html_msg_body");
@@ -67,9 +63,9 @@ namespace AIT.Tests
             //open email
             var inboxPage = new InboxPage(driver);
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            wait.Until(driver => inboxPage.Map.email.Displayed);
+            wait.Until(driver => inboxPage.Map.emailSW.Displayed);
             // Click on the email
-            inboxPage.openEmail(driver);
+            inboxPage.openEmail(inboxPage.Map.emailSW);
             var messagePage = new MessagePage(driver);
             // Now switch to the email body iframe:
             driver.SwitchTo().Frame("html_msg_body");
@@ -91,9 +87,9 @@ namespace AIT.Tests
             driver.Url = ("https://www.mailinator.com/v4/public/inboxes.jsp?to=beth123");            
             var inboxPage = new InboxPage(driver);
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            wait.Until(driver => inboxPage.Map.email.Displayed);
+            wait.Until(driver => inboxPage.Map.emailSW.Displayed);
             // Click on the email
-            inboxPage.openEmail(driver);
+            inboxPage.openEmail(inboxPage.Map.emailSW);
             var messagePage = new MessagePage(driver);
             // Now switch to the email body iframe:
             driver.SwitchTo().Frame("html_msg_body");
@@ -108,11 +104,11 @@ namespace AIT.Tests
         }
 
         [Test, Category("e2e")]
-        public void e2e_signup_register_and_login_test()
+        public void e2e_public_mailbox_signup_register_and_login_test()
         {         
             //1. generate random Mailinator Email address
             string Username = generateUniqueUsername(driver);
-            string Email = generateUniqueMailinatorEmail(driver);
+            string Email = generateUniquePublicMailinatorEmail(driver);
             string Password = generateUniquePassword(driver);
             //2. go to sign in
             driver.Url = ("https://timelesstales.in/wp-login.php?action=register");
@@ -122,15 +118,79 @@ namespace AIT.Tests
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
              //4. switch to new tab
              driver = driver.SwitchTo().NewWindow(WindowType.Tab);
-             //5. go to public inbox
+             //5. go to public Mailinator inbox
              driver.Url = ("https://www.mailinator.com/v4/public/inboxes.jsp?to=" + Email);
              //6. open email
              var inboxPage = new InboxPage(driver);
-             wait.Until(driver => inboxPage.Map.email.Displayed);
-             inboxPage.openEmail(driver);
-             //7.Now switch to the email body iframe (remember to check the name of the HTML AND REMEMBER TO SWITCH BACK AFTERWARDS!)          
+             wait.Until(driver => inboxPage.Map.emailWP.Displayed);
+             inboxPage.openEmail(inboxPage.Map.emailWP);
+             //7.Now switch to the email body iframe  
+             // AND REMEMBER TO SWITCH BACK AFTERWARDS!          
              var messagePage = new MessagePage(driver);
-             //note - the frame will either be html_msg_body or texthtml_msg_body so use a try catch block to try both
+             //note - the frame will either be html_msg_body or texthtml_msg_body 
+             //so use this try catch block to try both
+             try {
+             driver.SwitchTo().Frame("texthtml_msg_body");
+             wait.Until(driver => messagePage.Map.textLink.Displayed);}
+             catch (WebDriverException ) {
+                 driver.SwitchTo().DefaultContent();
+                 driver.SwitchTo().Frame("html_msg_body");
+                 wait.Until(driver => messagePage.Map.textLink.Displayed);
+             }
+             //8. Click on the email link 
+             messagePage.clickTextLink(driver);
+             //9. user auto-navigates to tab 3
+             var passwordPage = new PasswordPage(driver);
+             //10. switch back to window from iframe (see step 7) and switch to latest tab
+             driver.SwitchTo().Window(driver.WindowHandles[2]);
+             //11. wait for auto-generated password to appear
+             wait.Until(driver => passwordPage.Map.passStrengthResult.Displayed);
+             //12. clear field and enter password
+             passwordPage.enterPassword(Password);
+             passwordPage.clickResetPasswordButton(driver);
+             //13. login
+             var resetPasswordPage = new ResetPasswordPage(driver);
+             resetPasswordPage.clickLogin(driver);
+             registerPage.Login(Email, Password);
+             //14. assert landed on the correct page
+             var wordPressAdminPage = new WordPressAdminPage(driver);
+             String title = driver.Title;
+             Assert.AreEqual(title, "Dashboard ‹ My Blog — WordPress");
+        }
+
+        [Test, Category("e2e")]
+        public void e2e_privte_mailbox_signup_register_and_login_test()
+        {         
+            //1. generate random Mailinator Email address
+            string Username = generateUniqueUsername(driver);
+            string EmailPrefix = generateUniquePrivateMailinatorEmailPrefix(driver);
+            string Password = generateUniquePassword(driver);
+            //2. go to sign in
+            driver.Url = ("https://timelesstales.in/wp-login.php?action=register");
+            //3. click sign in button
+            var registerPage = new RegisterPage(driver);
+            registerPage.CreateAccount(Username, EmailPrefix);
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+             //4. switch to new tab
+             driver = driver.SwitchTo().NewWindow(WindowType.Tab);
+            //5. go to inbox
+            driver.Url = ("https://www.mailinator.com/");   
+            var homePage = new HomePage(driver);
+            homePage.clickLoginButton(driver);
+            var loginPage = new LoginPage(driver);
+            loginPage.Login(username, password);  
+            //bug - you have to re-enter this url as it sometimes autoredirects to * and ignores 
+            driver.Url = ("https://www.mailinator.com/v4/private/inboxes.jsp?to=" + EmailPrefix);   
+             //6. open email
+             var inboxPage = new InboxPage(driver);
+         //    driver.Url = ("https://www.mailinator.com/v4/private/inboxes.jsp?to=" + EmailPrefix);
+             wait.Until(driver => inboxPage.Map.emailWP.Displayed);
+             inboxPage.openEmail(inboxPage.Map.emailWP);
+             //7.Now switch to the email body iframe  
+             // AND REMEMBER TO SWITCH BACK AFTERWARDS!          
+             var messagePage = new MessagePage(driver);
+             //note - the frame will either be html_msg_body or texthtml_msg_body 
+             //so use this try catch block to try both
              try {
              driver.SwitchTo().Frame("html_msg_body");
              wait.Until(driver => messagePage.Map.textLink.Displayed);}
@@ -143,7 +203,7 @@ namespace AIT.Tests
              messagePage.clickTextLink(driver);
              //9. user auto-navigates to tab 3
              var passwordPage = new PasswordPage(driver);
-             //10. switch back to window from iframe and switch to latest tab
+             //10. switch back to window from iframe (see step 7) and switch to latest tab
              driver.SwitchTo().Window(driver.WindowHandles[2]);
              //11. wait for auto-generated password to appear
              wait.Until(driver => passwordPage.Map.passStrengthResult.Displayed);
@@ -153,8 +213,8 @@ namespace AIT.Tests
              //13. login
              var resetPasswordPage = new ResetPasswordPage(driver);
              resetPasswordPage.clickLogin(driver);
-             registerPage.Login(Email, Password);
-             //14. assert you have landed on the correct page
+             registerPage.Login(EmailPrefix, Password);
+             //14. assert landed on the correct page
              var wordPressAdminPage = new WordPressAdminPage(driver);
              String title = driver.Title;
              Assert.AreEqual(title, "Dashboard ‹ My Blog — WordPress");

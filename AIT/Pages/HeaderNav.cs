@@ -12,18 +12,6 @@ namespace AIT.Pages
             Map = new HeaderNavMap(driver);
         }
 
-        public void GotoSalesMenuDropdown()
-        {
-            FW.Log.Step("Navigate to Sales side bar menu");
-            Map.SalesLink.Click();
-        }
-    
-
-        public void GotoOrdersMenuDropdown()
-        {  
-            FW.Log.Step("Navigate to Sales -> orders side bar menu");
-            Map.OrdersLink.Click();
-        }
     }
 
 
@@ -36,9 +24,6 @@ namespace AIT.Pages
             _driver = driver;
         }
 
-        public IWebElement OrdersLink => _driver.FindElement(By.XPath("//*[@id='menu-sale']//*[contains(text(),'Orders')]"));
-
-        public IWebElement SalesLink => _driver.FindElement(By.XPath("//*[@id='menu-sale']"));
  
     }
 }

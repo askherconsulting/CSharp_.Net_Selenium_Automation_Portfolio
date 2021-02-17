@@ -1,6 +1,4 @@
 ﻿using OpenQA.Selenium;
-using Framework;
-using Config.Base;
 
 namespace AIT.Pages
 {
@@ -15,11 +13,6 @@ namespace AIT.Pages
             Map = new RegisterPageMap(driver);
         }
 
-        public RegisterPage Register(IWebDriver driver)
-       {
-           Map.Button.Click();
-           return this;
-       }
 
          public RegisterPage CreateAccount(string Username, string Email)
        {   
@@ -54,6 +47,6 @@ namespace AIT.Pages
         public IWebElement Username => _driver.FindElement(By.Id("user_login"));
 
         public IWebElement Email => _driver.FindElement(By.Id("user_email"));
-         public IWebElement Password => _driver.FindElement(By.Id("user_pass"));
+        public IWebElement Password => _driver.FindElement(By.Id("user_pass"));
     }
 }

@@ -32,12 +32,8 @@ namespace AIT.Pages
             _driver = driver;
         }
 
-        public IWebElement dashboard => _driver.FindElement(By.XPath("//*[contains(text(), 'Dashboard')]"));
-
         public IWebElement button => _driver.FindElement(By.Id("wp-submit"));
 
         public IWebElement passStrengthResult => _driver.FindElement(By.XPath("//*[@id='pass-strength-result'][text()='Strong']"));
-
-
     }
 }

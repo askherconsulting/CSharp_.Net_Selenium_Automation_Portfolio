@@ -1,0 +1,3 @@
+Starting timestamp: 15/02/2021 21:12:57
+Test: private_inbox_Click_Email_Link
+    [STEP]: Logging in

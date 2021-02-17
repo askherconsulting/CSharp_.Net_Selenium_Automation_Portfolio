@@ -17,17 +17,39 @@ namespace Config.Base
         public string password = "Shameful-rabbit0";
 
         
-         public string generateUniqueMailinatorEmail(IWebDriver driver)
+         public string generateUniquePublicMailinatorEmail(IWebDriver driver)
        {          
 
            Random rand = new Random();
 
            string emailPrefix = "Beth";
-           int emailSuffix = rand.Next(1, 9999);
+           int emailSuffix = rand.Next(1000, 9999);
            
-           string randomMailinatorEmail = emailPrefix + emailSuffix + "@mailinator.com";
-           Console.WriteLine("the unique email used for this test is " + randomMailinatorEmail);
-           return randomMailinatorEmail;
+           string randomMailinatorPublicEmail = emailPrefix + emailSuffix + "@mailinator.com";
+           Console.WriteLine("the unique email used for this test is " + randomMailinatorPublicEmail);
+           return randomMailinatorPublicEmail;
+       }
+
+           public string generateUniquePrivateMailinatorEmailSuffix(IWebDriver driver)
+       {          
+           
+           string randomMailinatorPrivateEmailSuffix = "@bethtest.testinator.com";
+           Console.WriteLine("the unique email suffix used for this test is " + randomMailinatorPrivateEmailSuffix);
+           return randomMailinatorPrivateEmailSuffix;
+       }
+
+        public string generateUniquePrivateMailinatorEmailPrefix(IWebDriver driver)
+       {          
+
+           Random rand = new Random();
+
+           string emailPrefix = "Beth";
+           int emailNumber = rand.Next(1000, 9999);
+           string emailSuffix = "@bethtest.testinator.com";
+           
+           string randomMailinatorPrivateEmailPrefix = emailPrefix + emailNumber + emailSuffix ;
+           Console.WriteLine("the unique email prefix used for this test is " + randomMailinatorPrivateEmailPrefix);
+           return randomMailinatorPrivateEmailPrefix;
        }
 
        public string generateUniquePassword(IWebDriver driver)

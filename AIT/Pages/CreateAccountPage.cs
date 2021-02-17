@@ -1,6 +1,4 @@
-﻿using System;
-using OpenQA.Selenium;
-using Framework;
+﻿using OpenQA.Selenium;
 
 namespace AIT.Pages
 {

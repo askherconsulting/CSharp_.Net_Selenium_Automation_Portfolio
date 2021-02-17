@@ -13,12 +13,6 @@ namespace AIT.Pages
             Map = new MessagePageMap(driver);
         }
 
-        public MessagePage clickText(IWebDriver driver)
-       {
-           Map.textTab.Click();
-           return this;
-       }
-
         public MessagePage clickButton(IWebDriver driver)
        {
            Map.button.Click();
@@ -41,10 +35,6 @@ namespace AIT.Pages
         {
             _driver = driver;
         }
-
-        public IWebElement email => _driver.FindElement(By.XPath("//*[contains(text(),subject)]"));
-
-        public IWebElement textTab => _driver.FindElement(By.Id("pills-textbuthtml-tab"));
 
         public IWebElement button => _driver.FindElement(By.XPath("//*[contains(text(),'login=')]"));
 
