@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Royale.Tests/bin/Debug/netcoreapp3.1/Royale.Tests.dll",
+            "program": "${workspaceFolder}/Mailinator.Tests/bin/Debug/netcoreapp3.1/Mailinator.Tests.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Royale.Tests",
+            "cwd": "${workspaceFolder}/Mailinator.Tests",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false

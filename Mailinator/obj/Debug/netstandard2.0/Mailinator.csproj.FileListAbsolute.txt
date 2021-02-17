@@ -1,0 +1,12 @@
+C:\C#_Selenium_Automation_Mailinator\Mailinator\bin\Debug\netstandard2.0\Mailinator.deps.json
+C:\C#_Selenium_Automation_Mailinator\Mailinator\bin\Debug\netstandard2.0\Mailinator.dll
+C:\C#_Selenium_Automation_Mailinator\Mailinator\bin\Debug\netstandard2.0\Mailinator.pdb
+C:\C#_Selenium_Automation_Mailinator\Mailinator\bin\Debug\netstandard2.0\Framework.dll
+C:\C#_Selenium_Automation_Mailinator\Mailinator\bin\Debug\netstandard2.0\Framework.pdb
+C:\C#_Selenium_Automation_Mailinator\Mailinator\obj\Debug\netstandard2.0\Mailinator.csprojAssemblyReference.cache
+C:\C#_Selenium_Automation_Mailinator\Mailinator\obj\Debug\netstandard2.0\Mailinator.AssemblyInfoInputs.cache
+C:\C#_Selenium_Automation_Mailinator\Mailinator\obj\Debug\netstandard2.0\Mailinator.AssemblyInfo.cs
+C:\C#_Selenium_Automation_Mailinator\Mailinator\obj\Debug\netstandard2.0\Mailinator.csproj.CoreCompileInputs.cache
+C:\C#_Selenium_Automation_Mailinator\Mailinator\obj\Debug\netstandard2.0\Mailinator.csproj.CopyComplete
+C:\C#_Selenium_Automation_Mailinator\Mailinator\obj\Debug\netstandard2.0\Mailinator.dll
+C:\C#_Selenium_Automation_Mailinator\Mailinator\obj\Debug\netstandard2.0\Mailinator.pdb
