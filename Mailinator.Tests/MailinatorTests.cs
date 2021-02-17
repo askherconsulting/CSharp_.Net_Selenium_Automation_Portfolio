@@ -11,7 +11,6 @@ namespace Mailinator.Tests
 {
     public class MailinatorTests : TestBase
 
-
     {
 
         [Test, Category("e2e")]
