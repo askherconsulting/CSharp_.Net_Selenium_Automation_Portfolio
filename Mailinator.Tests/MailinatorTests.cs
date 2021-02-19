@@ -16,11 +16,7 @@ namespace Mailinator.Tests
         [Test, Category("e2e")]
         public void private_inbox_Click_Email_Link()
         {         
-            //go to website e.g. mailchimp
-            //sign up
-            //open new tab
-            //go to mailinator and do the below  
-            //Login
+            //Login to mailinator and open private inbox  
             driver.Url = ("https://www.mailinator.com/v4/private/inboxes.jsp?to=beth");
             var homePage = new HomePage(driver);
             homePage.clickLoginButton(driver);
@@ -31,15 +27,24 @@ namespace Mailinator.Tests
             var inboxPage = new InboxPage(driver);
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             inboxPage.selectInbox("beth");
+            //give the email time to land in the inbox
             wait.Until(driver => inboxPage.Map.emailSW.Displayed);
             // Click on the email
             inboxPage.openEmail(inboxPage.Map.emailSW);
             var messagePage = new MessagePage(driver);
-            // Now switch to the email body iframe:
-            driver.SwitchTo().Frame("html_msg_body");
-            wait.Until(driver => messagePage.Map.button.Displayed);
+            // Now switch to the email body iframe
+             //note - the frame will either be html_msg_body or texthtml_msg_body 
+             //so use this try catch block to try both
+             try {
+             driver.SwitchTo().Frame("html_msg_body");
+             wait.Until(driver => messagePage.Map.viewEventButton.Displayed);}
+             catch (WebDriverException ) {
+                 driver.SwitchTo().DefaultContent();
+                 driver.SwitchTo().Frame("texthtml_msg_body");
+                 wait.Until(driver => messagePage.Map.viewEventButton.Displayed);
+             }
             // Click on the email link 
-            messagePage.clickButton(driver);
+            messagePage.clickViewEvent(driver);
             // If you need to go back to the menu, don't forget to switch back:
             driver.SwitchTo().DefaultContent();
             //check a new tab has been opened

@@ -19,6 +19,12 @@ namespace Mailinator.Pages
            return this;
        }
 
+        public MessagePage clickViewEvent(IWebDriver driver)
+       {
+           Map.viewEventButton.Click();
+           return this;
+       }
+
         public MessagePage clickTextLink(IWebDriver driver)
        {
            Map.textLink.Click();
@@ -37,6 +43,8 @@ namespace Mailinator.Pages
         }
 
         public IWebElement button => _driver.FindElement(By.XPath("//*[contains(text(),'login=')]"));
+
+        public IWebElement viewEventButton => _driver.FindElement(By.XPath("//*[contains(text(),'View ')]"));
 
          public IWebElement textLink => _driver.FindElement(By.XPath("//*[contains(text(),'login=')]"));
         

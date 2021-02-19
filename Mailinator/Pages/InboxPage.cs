@@ -40,7 +40,7 @@ namespace Mailinator.Pages
 
         public IWebElement emailWP => _driver.FindElement(By.XPath("//*[contains(text(),'WordPress')]"));
 
-        public IWebElement emailSW => _driver.FindElement(By.XPath("//*[contains(text(),'View event')]"));
+        public IWebElement emailSW => _driver.FindElement(By.XPath("//*[contains(text(),'TEST - Alert')]"));
         public IWebElement inboxName => _driver.FindElement(By.Id("inbox_field"));
 
     }

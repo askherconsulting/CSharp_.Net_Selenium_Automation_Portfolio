@@ -1,3 +1,0 @@
-Starting timestamp: 17/02/2021 23:22:47
-Test: e2e_privte_mailbox_signup_register_and_login_test
-    [STEP]: Logging in
