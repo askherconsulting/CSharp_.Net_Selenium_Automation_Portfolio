@@ -54,7 +54,7 @@ namespace Mailinator.Tests
 
 
 [Test, Category("e2e")]
-        public void public_inbox_switch_to_mailinator_tab()
+        public void public_inbox_switch_to_and_from_mailinator_tab()
         {         
             //go to public inbox
             driver.Url = ("https://www.mailinator.com/v4/public/inboxes.jsp?to=beth123");
@@ -84,28 +84,28 @@ namespace Mailinator.Tests
         }
 
 
-        [Test, Category("e2e")]
-            public void straight_to_mailinator()
-        {           
-            //go to public inbox
-            driver.Url = ("https://www.mailinator.com/v4/public/inboxes.jsp?to=beth123");            
-            var inboxPage = new InboxPage(driver);
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            wait.Until(driver => inboxPage.Map.emailSW.Displayed);
-            // Click on the email
-            inboxPage.openEmail(inboxPage.Map.emailSW);
-            var messagePage = new MessagePage(driver);
-            // Now switch to the email body iframe:
-            driver.SwitchTo().Frame("html_msg_body");
-            wait.Until(driver => messagePage.Map.button.Displayed);
-            // Click on the email link 
-            messagePage.clickButton(driver);
-            // If you need to go back to the menu, don't forget to switch back:
-            driver.SwitchTo().DefaultContent();
-            //check a new tab has been opened
-            wait.Until(driver => driver.WindowHandles.Count == 2);
-            Assert.AreEqual(2, driver.WindowHandles.Count);
-        }
+        //[Test, Category("e2e")]
+        //    public void straight_to_mailinator()
+        // {           
+        //     //go to public inbox
+        //     driver.Url = ("https://www.mailinator.com/v4/public/inboxes.jsp?to=beth123");            
+        //     var inboxPage = new InboxPage(driver);
+        //     var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+        //     wait.Until(driver => inboxPage.Map.emailSW.Displayed);
+        //     // Click on the email
+        //     inboxPage.openEmail(inboxPage.Map.emailSW);
+        //     var messagePage = new MessagePage(driver);
+        //     // Now switch to the email body iframe:
+        //     driver.SwitchTo().Frame("html_msg_body");
+        //     wait.Until(driver => messagePage.Map.button.Displayed);
+        //     // Click on the email link 
+        //     messagePage.clickButton(driver);
+        //     // If you need to go back to the menu, don't forget to switch back:
+        //     driver.SwitchTo().DefaultContent();
+        //     //check a new tab has been opened
+        //     wait.Until(driver => driver.WindowHandles.Count == 2);
+        //     Assert.AreEqual(2, driver.WindowHandles.Count);
+        // }
 
         [Test, Category("e2e")]
         public void e2e_public_mailbox_signup_register_and_login_test()
@@ -196,11 +196,11 @@ namespace Mailinator.Tests
              //note - the frame will either be html_msg_body or texthtml_msg_body 
              //so use this try catch block to try both
              try {
-             driver.SwitchTo().Frame("html_msg_body");
+             driver.SwitchTo().Frame("texthtml_msg_body");
              wait.Until(driver => messagePage.Map.textLink.Displayed);}
              catch (WebDriverException ) {
                  driver.SwitchTo().DefaultContent();
-                 driver.SwitchTo().Frame("texthtml_msg_body");
+                 driver.SwitchTo().Frame("html_msg_body");
                  wait.Until(driver => messagePage.Map.textLink.Displayed);
              }
              //8. Click on the email link 

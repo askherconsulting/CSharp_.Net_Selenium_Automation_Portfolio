@@ -1,0 +1,4 @@
+Starting timestamp: 19/02/2021 20:35:53
+Test: e2e_privte_mailbox_signup_register_and_login_test
+    [STEP]: Logging in
+[INFO]: Outcome: Failed

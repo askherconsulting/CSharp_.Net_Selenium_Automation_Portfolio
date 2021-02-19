@@ -44,7 +44,7 @@ namespace Mailinator.Pages
 
         public IWebElement button => _driver.FindElement(By.XPath("//*[contains(text(),'login=')]"));
 
-        public IWebElement viewEventButton => _driver.FindElement(By.XPath("//*[contains(text(),'View ')]"));
+        public IWebElement viewEventButton => _driver.FindElement(By.PartialLinkText("View event"));
 
          public IWebElement textLink => _driver.FindElement(By.XPath("//*[contains(text(),'login=')]"));
         
