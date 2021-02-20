@@ -1,9 +1,11 @@
+using System.Security.Cryptography;
 using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using Mailinator.Pages;
 using OpenQA.Selenium.Support.UI;
 using Tests.Base;
+
 
 
 
@@ -84,29 +86,37 @@ namespace Mailinator.Tests
         }
 
         [Test, Category("e2e")]
-        public void e2e_public_mailbox_signup_register_and_login_test()
-        {         
+        public void e2e_public_mailbox_signup_test()
+        {   //pre-requisites - generate pages
+            var wordPressPage = new WordPressPage(driver);
+            var registerPage = new RegisterPage(driver); 
+            var inboxPage = new InboxPage(driver);
+            var messagePage = new MessagePage(driver);
+            var passwordPage = new PasswordPage(driver);
+            var resetPasswordPage = new ResetPasswordPage(driver);
+            var wordPressAdminPage = new WordPressAdminPage(driver);
             //1. generate random Mailinator Email address
             string Username = generateUniqueUsername(driver);
             string Email = generateUniquePublicMailinatorEmail(driver);
             string Password = generateUniquePassword(driver);
-            //2. go to sign in
-            driver.Url = ("https://timelesstales.in/wp-login.php?action=register");
-            //3. click sign in button
-            var registerPage = new RegisterPage(driver);
-            registerPage.CreateAccount(Username, Email);
+            //2. set wait
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            //2. go to sign in
+            driver.Url = ("https://timelesstales.in/");
+            wordPressPage.ScrollToBottom(driver);
+            wordPressPage.ClickRegister(driver);
+            //3. click sign in button         
+            registerPage.CreateAccount(Username, Email);
+            
              //4. switch to new tab
              driver = driver.SwitchTo().NewWindow(WindowType.Tab);
              //5. go to public Mailinator inbox
              driver.Url = ("https://www.mailinator.com/v4/public/inboxes.jsp?to=" + Email);
              //6. open email
-             var inboxPage = new InboxPage(driver);
              wait.Until(driver => inboxPage.Map.emailWP.Displayed);
              inboxPage.openEmail(inboxPage.Map.emailWP);
              //7.Now switch to the email body iframe  
-             // AND REMEMBER TO SWITCH BACK AFTERWARDS!          
-             var messagePage = new MessagePage(driver);
+             // AND REMEMBER TO SWITCH BACK AFTERWARDS!                   
              //note - the frame will either be html_msg_body or texthtml_msg_body 
              //so use this try catch block to try both
              try {
@@ -119,8 +129,7 @@ namespace Mailinator.Tests
              }
              //8. Click on the email link 
              messagePage.clickTextLink(driver);
-             //9. user auto-navigates to tab 3
-             var passwordPage = new PasswordPage(driver);
+             //9. user auto-navigates to tab 3  
              //10. switch back to window from iframe (see step 7) and switch to latest tab
              driver.SwitchTo().Window(driver.WindowHandles[2]);
              //11. wait for auto-generated password to appear
@@ -129,17 +138,15 @@ namespace Mailinator.Tests
              passwordPage.enterPassword(Password);
              passwordPage.clickResetPasswordButton(driver);
              //13. login
-             var resetPasswordPage = new ResetPasswordPage(driver);
              resetPasswordPage.clickLogin(driver);
              registerPage.Login(Email, Password);
              //14. assert landed on the correct page
-             var wordPressAdminPage = new WordPressAdminPage(driver);
              String title = driver.Title;
              Assert.AreEqual(title, "Dashboard ‹ My Blog — WordPress");
         }
 
         [Test, Category("e2e")]
-        public void e2e_privte_mailbox_signup_register_and_login_test()
+        public void e2e_private_mailbox_signup_test()
         {         
             //1. generate random Mailinator Email address
             string Username = generateUniqueUsername(driver);
