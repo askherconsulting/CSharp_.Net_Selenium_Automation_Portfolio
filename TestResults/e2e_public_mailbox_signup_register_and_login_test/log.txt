@@ -1,3 +1,0 @@
-Starting timestamp: 19/02/2021 20:41:46
-Test: e2e_public_mailbox_signup_register_and_login_test
-[INFO]: Outcome: Passed

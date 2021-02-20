@@ -73,9 +73,9 @@ namespace Mailinator.Tests
             var messagePage = new MessagePage(driver);
             // Now switch to the email body iframe:
             driver.SwitchTo().Frame("html_msg_body");
-            wait.Until(driver => messagePage.Map.button.Displayed);
+            wait.Until(driver => messagePage.Map.viewEventButton.Displayed);
             // Click on the email link 
-            messagePage.clickButton(driver);
+            messagePage.clickViewEvent(driver);
             // If you need to go back to the menu, don't forget to switch back:
             driver.SwitchTo().DefaultContent();
             //check a new tab has been opened
